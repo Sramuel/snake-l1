@@ -1,0 +1,554 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ICSG: Référence du fichier project_snake.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">ICSG
+   </div>
+   <div id="projectbrief">ICSG : The InitC Snake Game</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('project__snake_8h.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Structures de données</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#enum-members">Énumérations</a> &#124;
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle"><div class="title">Référence du fichier project_snake.h</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Serpents.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="project__masks_8h_source.html">project_masks.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="project__board_8h_source.html">project_board.h</a>&quot;</code><br />
+</div>
+<p><a href="project__snake_8h_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Structures de données</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsnake.html">snake</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Le type représentant un seul serpent dans le jeu.  <a href="structsnake.html#details">Plus de détails...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a56aab67b8ddc082ec9b353efc574d0e0" id="r_a56aab67b8ddc082ec9b353efc574d0e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a56aab67b8ddc082ec9b353efc574d0e0">LENGTH_CELL</a>&#160;&#160;&#160;64</td></tr>
+<tr class="memdesc:a56aab67b8ddc082ec9b353efc574d0e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Le nombre de mouvements nécessaires à un serpent pour traverser une seule cellule.  <br /></td></tr>
+<tr class="separator:a56aab67b8ddc082ec9b353efc574d0e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7caadfb26d7b0e0dfd0d802c769a80f9" id="r_a7caadfb26d7b0e0dfd0d802c769a80f9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7caadfb26d7b0e0dfd0d802c769a80f9">SLOWER_VAL</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:a7caadfb26d7b0e0dfd0d802c769a80f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Le nombre de mouvements effectués en un seul tour par un serpent allant à la vitesse SLOWER.  <br /></td></tr>
+<tr class="separator:a7caadfb26d7b0e0dfd0d802c769a80f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ace78d15f81948e09d02ebdcf09d20e" id="r_a7ace78d15f81948e09d02ebdcf09d20e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ace78d15f81948e09d02ebdcf09d20e">SLOW_VAL</a>&#160;&#160;&#160;2</td></tr>
+<tr class="memdesc:a7ace78d15f81948e09d02ebdcf09d20e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Le nombre de mouvements effectués en un seul tour par un serpent allant à la vitesse SLOW.  <br /></td></tr>
+<tr class="separator:a7ace78d15f81948e09d02ebdcf09d20e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a212a654dc02894e1f8d1903666cf8fea" id="r_a212a654dc02894e1f8d1903666cf8fea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a212a654dc02894e1f8d1903666cf8fea">MEDIUM_VAL</a>&#160;&#160;&#160;4</td></tr>
+<tr class="memdesc:a212a654dc02894e1f8d1903666cf8fea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Le nombre de mouvements effectués en un seul tour par un serpent allant à la vitesse MEDIUM.  <br /></td></tr>
+<tr class="separator:a212a654dc02894e1f8d1903666cf8fea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a893fb8e5ac03c28547b7336c87c965c1" id="r_a893fb8e5ac03c28547b7336c87c965c1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a893fb8e5ac03c28547b7336c87c965c1">FAST_VAL</a>&#160;&#160;&#160;8</td></tr>
+<tr class="memdesc:a893fb8e5ac03c28547b7336c87c965c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Le nombre de mouvements effectués en un seul tour par un serpent allant à la vitesse FAST.  <br /></td></tr>
+<tr class="separator:a893fb8e5ac03c28547b7336c87c965c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab21ade915ba35b4fc6ab9a712a0cc2b2" id="r_ab21ade915ba35b4fc6ab9a712a0cc2b2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab21ade915ba35b4fc6ab9a712a0cc2b2">FASTER_VAL</a>&#160;&#160;&#160;16</td></tr>
+<tr class="memdesc:ab21ade915ba35b4fc6ab9a712a0cc2b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Le nombre de mouvements effectués en un seul tour par un serpent allant à la vitesse FASTER.  <br /></td></tr>
+<tr class="separator:ab21ade915ba35b4fc6ab9a712a0cc2b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea9094459a7b75f4f9b656a6ae6c5070" id="r_aea9094459a7b75f4f9b656a6ae6c5070"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea9094459a7b75f4f9b656a6ae6c5070">LUDICROUS_VAL</a>&#160;&#160;&#160;32</td></tr>
+<tr class="memdesc:aea9094459a7b75f4f9b656a6ae6c5070"><td class="mdescLeft">&#160;</td><td class="mdescRight">Le nombre de mouvements effectués en un seul tour par un serpent allant à la vitesse LUDICROUS.  <br /></td></tr>
+<tr class="separator:aea9094459a7b75f4f9b656a6ae6c5070"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Énumérations</h2></td></tr>
+<tr class="memitem:ab04a44aead88cfdbd44325ec2cf7a33a" id="r_ab04a44aead88cfdbd44325ec2cf7a33a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab04a44aead88cfdbd44325ec2cf7a33a">speed</a> { <br />
+&#160;&#160;<a class="el" href="#ab04a44aead88cfdbd44325ec2cf7a33aa1fc0368ee2732fb068b84aa3cef71f78">SLOWER</a>
+, <a class="el" href="#ab04a44aead88cfdbd44325ec2cf7a33aab27edad9d3e126dc8448b6030438adb6">SLOW</a>
+, <a class="el" href="#ab04a44aead88cfdbd44325ec2cf7a33aa5340ec7ecef6cc3886684a3bd3450d64">MEDIUM</a>
+, <a class="el" href="#ab04a44aead88cfdbd44325ec2cf7a33aaf84c11ba888e499a8a282a3e6f5de7de">FAST</a>
+, <br />
+&#160;&#160;<a class="el" href="#ab04a44aead88cfdbd44325ec2cf7a33aa64cc6aaefb2f597f1d34707d58099cf8">FASTER</a>
+, <a class="el" href="#ab04a44aead88cfdbd44325ec2cf7a33aa72ac2e37a30fe0a9c4fcf83925e7bca0">LUDICROUS</a>
+, <a class="el" href="#ab04a44aead88cfdbd44325ec2cf7a33aa6e2de06b10516ded221617afa315aa44">SPEED_SIZE</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:ab04a44aead88cfdbd44325ec2cf7a33a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Noms internes des vitesses disponibles pour un serpent.  <a href="#ab04a44aead88cfdbd44325ec2cf7a33a">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ab04a44aead88cfdbd44325ec2cf7a33a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a76eed34ed8aadb70acffaec8a302b358" id="r_a76eed34ed8aadb70acffaec8a302b358"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76eed34ed8aadb70acffaec8a302b358">speed_to_value</a> (<a class="el" href="#ab04a44aead88cfdbd44325ec2cf7a33a">speed</a> s)</td></tr>
+<tr class="memdesc:a76eed34ed8aadb70acffaec8a302b358"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pour chaque nom de vitesse, associe le nombre de mouvements effectués en un seul tour par un serpent allant à cette vitesse.  <br /></td></tr>
+<tr class="separator:a76eed34ed8aadb70acffaec8a302b358"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf94bf4311e3f57d8f2f7de5b0e900f3" id="r_adf94bf4311e3f57d8f2f7de5b0e900f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structsnake.html">snake</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf94bf4311e3f57d8f2f7de5b0e900f3">new_snake</a> (<a class="el" href="structboard.html">board</a> *b, <a class="el" href="#ab04a44aead88cfdbd44325ec2cf7a33a">speed</a> sp, int flen)</td></tr>
+<tr class="memdesc:adf94bf4311e3f57d8f2f7de5b0e900f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alloue un nouveau serpent sur le tas.  <br /></td></tr>
+<tr class="separator:adf94bf4311e3f57d8f2f7de5b0e900f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aded3f6273c52e842a82b2edd4116cd2a" id="r_aded3f6273c52e842a82b2edd4116cd2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aded3f6273c52e842a82b2edd4116cd2a">delete_snake</a> (<a class="el" href="structsnake.html">snake</a> *s)</td></tr>
+<tr class="memdesc:aded3f6273c52e842a82b2edd4116cd2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supprime un serpent.  <br /></td></tr>
+<tr class="separator:aded3f6273c52e842a82b2edd4116cd2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75277449199623c0882ff1cbfeef3094" id="r_a75277449199623c0882ff1cbfeef3094"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75277449199623c0882ff1cbfeef3094">consume_object_snake</a> (<a class="el" href="structsnake.html">snake</a> *s, <a class="el" href="project__board_8h.html#ad03408aabe16bb53c780fae6cf3910f9">object</a> obj)</td></tr>
+<tr class="memdesc:a75277449199623c0882ff1cbfeef3094"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fait consommer un objet à un serpent.  <br /></td></tr>
+<tr class="separator:a75277449199623c0882ff1cbfeef3094"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f0f65e7dccb6b88f7f8c13b2398d4f5" id="r_a9f0f65e7dccb6b88f7f8c13b2398d4f5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f0f65e7dccb6b88f7f8c13b2398d4f5">implement_turn_snake</a> (<a class="el" href="structsnake.html">snake</a> *s, <a class="el" href="structboard.html">board</a> *b)</td></tr>
+<tr class="memdesc:a9f0f65e7dccb6b88f7f8c13b2398d4f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">La fonction déplace le serpent en fonction de sa direction et de sa vitesse actuelles. Le serpent ne peut se déplacer que s'il est vivant.  <br /></td></tr>
+<tr class="separator:a9f0f65e7dccb6b88f7f8c13b2398d4f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Serpents. </p>
+<p>Type utilisé pour représenter un seul serpent et fonctions associées. </p>
+
+<p class="definition">Définition dans le fichier <a class="el" href="project__snake_8h_source.html">project_snake.h</a>.</p>
+</div><h2 class="groupheader">Documentation des macros</h2>
+<a id="a56aab67b8ddc082ec9b353efc574d0e0" name="a56aab67b8ddc082ec9b353efc574d0e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56aab67b8ddc082ec9b353efc574d0e0">&#9670;&#160;</a></span>LENGTH_CELL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LENGTH_CELL&#160;&#160;&#160;64</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Le nombre de mouvements nécessaires à un serpent pour traverser une seule cellule. </p>
+<p>UTILISEZ CETTE VALEUR MAIS NE LA CHANGEZ PAS (cela casserait tout le jeu). </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="project__snake_8h_source.html#l00032">32</a> du fichier <a class="el" href="project__snake_8h_source.html">project_snake.h</a>.</p>
+
+</div>
+</div>
+<a id="a7caadfb26d7b0e0dfd0d802c769a80f9" name="a7caadfb26d7b0e0dfd0d802c769a80f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7caadfb26d7b0e0dfd0d802c769a80f9">&#9670;&#160;</a></span>SLOWER_VAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SLOWER_VAL&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Le nombre de mouvements effectués en un seul tour par un serpent allant à la vitesse SLOWER. </p>
+<p>UTILISEZ CETTE VALEUR MAIS NE LA CHANGEZ PAS (cela casserait tout le jeu). </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="project__snake_8h_source.html#l00061">61</a> du fichier <a class="el" href="project__snake_8h_source.html">project_snake.h</a>.</p>
+
+</div>
+</div>
+<a id="a7ace78d15f81948e09d02ebdcf09d20e" name="a7ace78d15f81948e09d02ebdcf09d20e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ace78d15f81948e09d02ebdcf09d20e">&#9670;&#160;</a></span>SLOW_VAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SLOW_VAL&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Le nombre de mouvements effectués en un seul tour par un serpent allant à la vitesse SLOW. </p>
+<p>UTILISEZ CETTE VALEUR MAIS NE LA CHANGEZ PAS (cela casserait tout le jeu). </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="project__snake_8h_source.html#l00070">70</a> du fichier <a class="el" href="project__snake_8h_source.html">project_snake.h</a>.</p>
+
+</div>
+</div>
+<a id="a212a654dc02894e1f8d1903666cf8fea" name="a212a654dc02894e1f8d1903666cf8fea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a212a654dc02894e1f8d1903666cf8fea">&#9670;&#160;</a></span>MEDIUM_VAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MEDIUM_VAL&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Le nombre de mouvements effectués en un seul tour par un serpent allant à la vitesse MEDIUM. </p>
+<p>UTILISEZ CETTE VALEUR MAIS NE LA CHANGEZ PAS (cela casserait tout le jeu). </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="project__snake_8h_source.html#l00079">79</a> du fichier <a class="el" href="project__snake_8h_source.html">project_snake.h</a>.</p>
+
+</div>
+</div>
+<a id="a893fb8e5ac03c28547b7336c87c965c1" name="a893fb8e5ac03c28547b7336c87c965c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a893fb8e5ac03c28547b7336c87c965c1">&#9670;&#160;</a></span>FAST_VAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FAST_VAL&#160;&#160;&#160;8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Le nombre de mouvements effectués en un seul tour par un serpent allant à la vitesse FAST. </p>
+<p>UTILISEZ CETTE VALEUR MAIS NE LA CHANGEZ PAS (cela casserait tout le jeu). </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="project__snake_8h_source.html#l00088">88</a> du fichier <a class="el" href="project__snake_8h_source.html">project_snake.h</a>.</p>
+
+</div>
+</div>
+<a id="ab21ade915ba35b4fc6ab9a712a0cc2b2" name="ab21ade915ba35b4fc6ab9a712a0cc2b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab21ade915ba35b4fc6ab9a712a0cc2b2">&#9670;&#160;</a></span>FASTER_VAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FASTER_VAL&#160;&#160;&#160;16</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Le nombre de mouvements effectués en un seul tour par un serpent allant à la vitesse FASTER. </p>
+<p>UTILISEZ CETTE VALEUR MAIS NE LA CHANGEZ PAS (cela casserait tout le jeu). </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="project__snake_8h_source.html#l00097">97</a> du fichier <a class="el" href="project__snake_8h_source.html">project_snake.h</a>.</p>
+
+</div>
+</div>
+<a id="aea9094459a7b75f4f9b656a6ae6c5070" name="aea9094459a7b75f4f9b656a6ae6c5070"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea9094459a7b75f4f9b656a6ae6c5070">&#9670;&#160;</a></span>LUDICROUS_VAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LUDICROUS_VAL&#160;&#160;&#160;32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Le nombre de mouvements effectués en un seul tour par un serpent allant à la vitesse LUDICROUS. </p>
+<p>UTILISEZ CETTE VALEUR MAIS NE LA CHANGEZ PAS (cela casserait tout le jeu). </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="project__snake_8h_source.html#l00106">106</a> du fichier <a class="el" href="project__snake_8h_source.html">project_snake.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation du type de l'énumération</h2>
+<a id="ab04a44aead88cfdbd44325ec2cf7a33a" name="ab04a44aead88cfdbd44325ec2cf7a33a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab04a44aead88cfdbd44325ec2cf7a33a">&#9670;&#160;</a></span>speed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ab04a44aead88cfdbd44325ec2cf7a33a">speed</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Noms internes des vitesses disponibles pour un serpent. </p>
+<p>La vitesse d'un serpent détermine le nombre de mouvements que le serpent effectue en un tour. Ces nombres de mouvements sont déjà définis dans le tableau global speed_values déclaré ci-dessous (le tableau lui-même est défini et initialisé dans project_snake.c). </p>
+<table class="fieldtable">
+<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><a id="ab04a44aead88cfdbd44325ec2cf7a33aa1fc0368ee2732fb068b84aa3cef71f78" name="ab04a44aead88cfdbd44325ec2cf7a33aa1fc0368ee2732fb068b84aa3cef71f78"></a>SLOWER&#160;</td><td class="fielddoc"><p>Vitesse plus lente : 1 mouvement. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab04a44aead88cfdbd44325ec2cf7a33aab27edad9d3e126dc8448b6030438adb6" name="ab04a44aead88cfdbd44325ec2cf7a33aab27edad9d3e126dc8448b6030438adb6"></a>SLOW&#160;</td><td class="fielddoc"><p>Vitesse lente : 2 mouvements. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab04a44aead88cfdbd44325ec2cf7a33aa5340ec7ecef6cc3886684a3bd3450d64" name="ab04a44aead88cfdbd44325ec2cf7a33aa5340ec7ecef6cc3886684a3bd3450d64"></a>MEDIUM&#160;</td><td class="fielddoc"><p>Vitesse moyenne : 4 mouvements. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab04a44aead88cfdbd44325ec2cf7a33aaf84c11ba888e499a8a282a3e6f5de7de" name="ab04a44aead88cfdbd44325ec2cf7a33aaf84c11ba888e499a8a282a3e6f5de7de"></a>FAST&#160;</td><td class="fielddoc"><p>Vitesse rapide : 8 mouvements. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab04a44aead88cfdbd44325ec2cf7a33aa64cc6aaefb2f597f1d34707d58099cf8" name="ab04a44aead88cfdbd44325ec2cf7a33aa64cc6aaefb2f597f1d34707d58099cf8"></a>FASTER&#160;</td><td class="fielddoc"><p>Vitesse plus rapide : 16 mouvements. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab04a44aead88cfdbd44325ec2cf7a33aa72ac2e37a30fe0a9c4fcf83925e7bca0" name="ab04a44aead88cfdbd44325ec2cf7a33aa72ac2e37a30fe0a9c4fcf83925e7bca0"></a>LUDICROUS&#160;</td><td class="fielddoc"><p>Vitesse ridicule : 32 mouvements. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab04a44aead88cfdbd44325ec2cf7a33aa6e2de06b10516ded221617afa315aa44" name="ab04a44aead88cfdbd44325ec2cf7a33aa6e2de06b10516ded221617afa315aa44"></a>SPEED_SIZE&#160;</td><td class="fielddoc"><p>Nombre de vitesses. </p>
+</td></tr>
+</table>
+
+<p class="definition">Définition à la ligne <a class="el" href="project__snake_8h_source.html#l00044">44</a> du fichier <a class="el" href="project__snake_8h_source.html">project_snake.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a id="a76eed34ed8aadb70acffaec8a302b358" name="a76eed34ed8aadb70acffaec8a302b358"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76eed34ed8aadb70acffaec8a302b358">&#9670;&#160;</a></span>speed_to_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int speed_to_value </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#ab04a44aead88cfdbd44325ec2cf7a33a">speed</a></td>          <td class="paramname"><span class="paramname"><em>s</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pour chaque nom de vitesse, associe le nombre de mouvements effectués en un seul tour par un serpent allant à cette vitesse. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>Le nombre de mouvements effectués en un seul tour par un serpent allant à la vitesse donnée. </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>La vitesse. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adf94bf4311e3f57d8f2f7de5b0e900f3" name="adf94bf4311e3f57d8f2f7de5b0e900f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf94bf4311e3f57d8f2f7de5b0e900f3">&#9670;&#160;</a></span>new_snake()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structsnake.html">snake</a> * new_snake </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structboard.html">board</a> *</td>          <td class="paramname"><span class="paramname"><em>b</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#ab04a44aead88cfdbd44325ec2cf7a33a">speed</a></td>          <td class="paramname"><span class="paramname"><em>sp</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>flen</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Alloue un nouveau serpent sur le tas. </p>
+<p>Un nouveau serpent commence toujours à la longueur 2 :</p><ul>
+<li>La cellule de la tête est occupée par la tête du serpent : c'est la cellule dans laquelle le serpent se déplace.</li>
+<li>La cellule de la queue est occupée par la queue du serpent : c'est la cellule que le serpent quitte (si elle est à pleine longueur). Ces deux cellules sont choisies aléatoirement sur le plateau (appelez la fonction "rand()" qui renvoie un entier aléatoire positif) à partir de la liste des cellules vides. Naturellement, elles doivent être contiguës.</li>
+</ul>
+<p>Pour générer un nombre aléatoire, utilisez la fonction "int rand(void)" de la bibliothèque standard. Pour obtenir un nombre aléatoire entre 0 et N, utilisez "rand() % (N+1)".</p>
+<dl class="section remark"><dt>Remarques</dt><dd>Si la fonction échoue à créer le nouveau serpent (par exemple, si deux cellules vides contiguës ne peuvent pas être trouvées), elle renvoie NULL.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>N'oubliez pas de mettre à jour les tableaux du plateau puisque les cellules de la queue et de la tête sont maintenant occupées par le serpent (cela inclut les tableaux indir et outdir).</dd></dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Un pointeur vers le nouveau serpent. </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">b</td><td>Le plateau sur lequel le serpent sera créé.  </td></tr>
+    <tr><td class="paramname">sp</td><td>La vitesse initiale du serpent.  </td></tr>
+    <tr><td class="paramname">flen</td><td>La longueur totale initiale du serpent. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aded3f6273c52e842a82b2edd4116cd2a" name="aded3f6273c52e842a82b2edd4116cd2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aded3f6273c52e842a82b2edd4116cd2a">&#9670;&#160;</a></span>delete_snake()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void delete_snake </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structsnake.html">snake</a> *</td>          <td class="paramname"><span class="paramname"><em>s</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Supprime un serpent. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Le serpent à supprimer. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a75277449199623c0882ff1cbfeef3094" name="a75277449199623c0882ff1cbfeef3094"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75277449199623c0882ff1cbfeef3094">&#9670;&#160;</a></span>consume_object_snake()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void consume_object_snake </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structsnake.html">snake</a> *</td>          <td class="paramname"><span class="paramname"><em>s</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="project__board_8h.html#ad03408aabe16bb53c780fae6cf3910f9">object</a></td>          <td class="paramname"><span class="paramname"><em>obj</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fait consommer un objet à un serpent. </p>
+<dl class="section remark"><dt>Remarques</dt><dd>Consommer un objet consiste à mettre à jour le serpent en fonction de l'objet. La fonction ne fait rien si le serpent est mort.</dd></dl>
+<p>Modifications correspondant à chaque objet :</p><ul>
+<li>APPLE : La longueur totale du serpent augmente de un. Le score du serpent est augmenté de 10.</li>
+<li>CHERRY : La longueur totale du serpent augmente de un. Le score du serpent est augmenté de 20.</li>
+<li>BANANA : La longueur totale du serpent augmente de deux. Le score du serpent est augmenté de 30.</li>
+<li>GRAPES : La longueur totale du serpent augmente de deux. Le score du serpent est augmenté de 40.</li>
+<li>PINEAPPLE : La longueur totale du serpent augmente de trois. Le score du serpent est augmenté de 50.</li>
+<li>STUDENT : La longueur totale du serpent est doublée. Le score du serpent est augmenté de 100 (cela augmente également le nombre d'étudiants mangés par le serpent).</li>
+<li>MUSHROOM : La vitesse du serpent est diminuée d'un niveau (si elle n'est pas déjà à la vitesse minimale).</li>
+<li>CHILI : La vitesse du serpent est augmentée d'un niveau (si elle n'est pas déjà à la vitesse maximale).</li>
+</ul>
+<dl class="section attention"><dt>Attention</dt><dd>Si l'objet passé est EMPTY ou SNAKE, la fonction ne fait rien (ce ne sont pas des objets consommables et les fonctions ne doivent PAS être appelées avec ces objets). </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Le serpent.  </td></tr>
+    <tr><td class="paramname">obj</td><td>L'objet. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9f0f65e7dccb6b88f7f8c13b2398d4f5" name="a9f0f65e7dccb6b88f7f8c13b2398d4f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f0f65e7dccb6b88f7f8c13b2398d4f5">&#9670;&#160;</a></span>implement_turn_snake()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool implement_turn_snake </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structsnake.html">snake</a> *</td>          <td class="paramname"><span class="paramname"><em>s</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structboard.html">board</a> *</td>          <td class="paramname"><span class="paramname"><em>b</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>La fonction déplace le serpent en fonction de sa direction et de sa vitesse actuelles. Le serpent ne peut se déplacer que s'il est vivant. </p>
+<p>Cette fonction avance la valeur de progression du serpent en fonction de sa vitesse (elle ajoute le nombre de mouvements correspondant à cette vitesse à la valeur de progression).</p>
+<p>Si la valeur de progression devient égale à LENGTH_CELL (le serpent a terminé la cellule actuelle), la fonction déplace la tête du serpent vers la cellule suivante (déterminée par la cellule actuelle de la tête et la direction). Dans ce cas, la fonction doit :</p><ul>
+<li>Réinitialiser la valeur de progression du serpent (elle devient 0).</li>
+<li>Mettre à jour la longueur du serpent (elle augmente de un si le serpent n'est pas encore à pleine longueur).</li>
+<li>Mettre à jour la queue du serpent si nécessaire (elle perd une cellule si le serpent est déjà à pleine longueur).</li>
+<li>Mettre à jour la direction de sortie du serpent sur le plateau pour la cellule dégagée (vers la direction prise par le serpent).</li>
+<li>Si la cellule suivante n'existe pas, si elle est occupée par un serpent ou si elle est masquée, le serpent meurt.</li>
+</ul>
+<p>Si le serpent reste en vie, la fonction doit également :</p><ul>
+<li>Mettre à jour le serpent en fonction de l'objet contenu dans la cellule suivante (s'il y en a un).</li>
+<li>Mettre à jour la tête du serpent (elle se déplace vers la cellule suivante).</li>
+<li>Mettre à jour le tableau des objets du plateau (la cellule suivante est maintenant occupée par le serpent).</li>
+<li>Mettre à jour la direction d'entrée du serpent dans la cellule suivante (le contraire de la direction dans laquelle le serpent est sorti de la cellule précédente).</li>
+</ul>
+<dl class="section remark"><dt>Remarques</dt><dd>Si le serpent est mort, la fonction ne fait rien.</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Cette fonction doit mettre à jour à la fois les serpents et le plateau selon les règles du jeu.</dd></dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Vrai si la fonction a tué le serpent, faux sinon (le serpent est toujours vivant ou était déjà mort). Cette information est utile dans la fonction qui appelle implement_turn_snake (à savoir, implement_turn_all_snakes dans <a class="el" href="project__game_8h.html" title="Jeu.">project_game.h</a>). </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Le serpent.  </td></tr>
+    <tr><td class="paramname">b</td><td>Le plateau. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="project__snake_8h.html">project_snake.h</a></li>
+    <li class="footer">Généré par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>

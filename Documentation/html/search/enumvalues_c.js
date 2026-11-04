@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['sc_5flength_0',['SC_LENGTH',['../project__score_8h.html#aed36276ae7ac961357268efdfdbc85f9a8932aac4add65e3ab9a7649c94d4c10f',1,'project_score.h']]],
+  ['sc_5fmain_1',['SC_MAIN',['../project__score_8h.html#aed36276ae7ac961357268efdfdbc85f9a78d1ad6636ccee75744c1081b30ac1bf',1,'project_score.h']]],
+  ['sc_5fsize_2',['SC_SIZE',['../project__score_8h.html#aed36276ae7ac961357268efdfdbc85f9ab9a57cb93122b495fecd8102ac5bd00a',1,'project_score.h']]],
+  ['sc_5fstudents_3',['SC_STUDENTS',['../project__score_8h.html#aed36276ae7ac961357268efdfdbc85f9a911424e81e3ca4e8f34db2de257dbcca',1,'project_score.h']]],
+  ['sc_5ftime_4',['SC_TIME',['../project__score_8h.html#aed36276ae7ac961357268efdfdbc85f9ae812bf288076fa01c7ec794b7a92deb4',1,'project_score.h']]],
+  ['sc_5fvisited_5',['SC_VISITED',['../project__score_8h.html#aed36276ae7ac961357268efdfdbc85f9afb93f6e02d51082586b12570f55e7088',1,'project_score.h']]],
+  ['slow_6',['SLOW',['../project__snake_8h.html#ab04a44aead88cfdbd44325ec2cf7a33aab27edad9d3e126dc8448b6030438adb6',1,'project_snake.h']]],
+  ['slower_7',['SLOWER',['../project__snake_8h.html#ab04a44aead88cfdbd44325ec2cf7a33aa1fc0368ee2732fb068b84aa3cef71f78',1,'project_snake.h']]],
+  ['snake_8',['SNAKE',['../project__board_8h.html#ad03408aabe16bb53c780fae6cf3910f9a7d71275d46953bd71d2c6b11e219ee24',1,'project_board.h']]],
+  ['speed_5fsize_9',['SPEED_SIZE',['../project__snake_8h.html#ab04a44aead88cfdbd44325ec2cf7a33aa6e2de06b10516ded221617afa315aa44',1,'project_snake.h']]],
+  ['strat_5fclosestfruit_10',['STRAT_CLOSESTFRUIT',['../project__strats_8h.html#a540bf8d51500c3ddb234c457e7bc076ba89ab9c346e06ec88671c0eda3996b248',1,'project_strats.h']]],
+  ['strat_5fdistance_11',['STRAT_DISTANCE',['../project__strats_8h.html#a540bf8d51500c3ddb234c457e7bc076baec6512811ae1ea5c44cbf85240214878',1,'project_strats.h']]],
+  ['strat_5fempty_12',['STRAT_EMPTY',['../project__strats_8h.html#a540bf8d51500c3ddb234c457e7bc076ba64db1ee4969d1965992249eec1b2960b',1,'project_strats.h']]],
+  ['strat_5fscore_13',['STRAT_SCORE',['../project__strats_8h.html#a540bf8d51500c3ddb234c457e7bc076baec6882970324d2640651cd8444da9ca6',1,'project_strats.h']]],
+  ['strat_5fsize_14',['STRAT_SIZE',['../project__strats_8h.html#a540bf8d51500c3ddb234c457e7bc076ba37b314715ec66965e0b3de49b32a8276',1,'project_strats.h']]],
+  ['strat_5fstudents_15',['STRAT_STUDENTS',['../project__strats_8h.html#a540bf8d51500c3ddb234c457e7bc076bad585fa51945f33b831526607e93d523a',1,'project_strats.h']]],
+  ['strat_5ftime_16',['STRAT_TIME',['../project__strats_8h.html#a540bf8d51500c3ddb234c457e7bc076bad354113c8c9b9dd2930832d189e87945',1,'project_strats.h']]],
+  ['student_17',['STUDENT',['../project__board_8h.html#ad03408aabe16bb53c780fae6cf3910f9a65e90109a047c6f58260395f659cd41b',1,'project_board.h']]]
+];

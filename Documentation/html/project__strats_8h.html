@@ -1,0 +1,419 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ICSG: Référence du fichier project_strats.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">ICSG
+   </div>
+   <div id="projectbrief">ICSG : The InitC Snake Game</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('project__strats_8h.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#enum-members">Énumérations</a> &#124;
+<a href="#func-members">Fonctions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">Référence du fichier project_strats.h</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Fonctions de stratégie pour les IA.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="project__game_8h_source.html">project_game.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="project__tools_8h_source.html">project_tools.h</a>&quot;</code><br />
+</div>
+<p><a href="project__strats_8h_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Énumérations</h2></td></tr>
+<tr class="memitem:a540bf8d51500c3ddb234c457e7bc076b" id="r_a540bf8d51500c3ddb234c457e7bc076b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a540bf8d51500c3ddb234c457e7bc076b">strat</a> { <br />
+&#160;&#160;<a class="el" href="#a540bf8d51500c3ddb234c457e7bc076ba64db1ee4969d1965992249eec1b2960b">STRAT_EMPTY</a>
+, <a class="el" href="#a540bf8d51500c3ddb234c457e7bc076ba89ab9c346e06ec88671c0eda3996b248">STRAT_CLOSESTFRUIT</a>
+, <a class="el" href="#a540bf8d51500c3ddb234c457e7bc076baec6882970324d2640651cd8444da9ca6">STRAT_SCORE</a>
+, <a class="el" href="#a540bf8d51500c3ddb234c457e7bc076bad585fa51945f33b831526607e93d523a">STRAT_STUDENTS</a>
+, <br />
+&#160;&#160;<a class="el" href="#a540bf8d51500c3ddb234c457e7bc076baec6512811ae1ea5c44cbf85240214878">STRAT_DISTANCE</a>
+, <a class="el" href="#a540bf8d51500c3ddb234c457e7bc076bad354113c8c9b9dd2930832d189e87945">STRAT_TIME</a>
+, <a class="el" href="#a540bf8d51500c3ddb234c457e7bc076ba37b314715ec66965e0b3de49b32a8276">STRAT_SIZE</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:a540bf8d51500c3ddb234c457e7bc076b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Noms internes des stratégies disponibles.  <a href="#a540bf8d51500c3ddb234c457e7bc076b">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a540bf8d51500c3ddb234c457e7bc076b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a46b595867dc7a5bf7ac28e13122e1260" id="r_a46b595867dc7a5bf7ac28e13122e1260"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a46b595867dc7a5bf7ac28e13122e1260">empty_strategy</a> (<a class="el" href="structgame.html">game</a> *g, int i)</td></tr>
+<tr class="memdesc:a46b595867dc7a5bf7ac28e13122e1260"><td class="mdescLeft">&#160;</td><td class="mdescRight">Une stratégie qui ne fait rien.  <br /></td></tr>
+<tr class="separator:a46b595867dc7a5bf7ac28e13122e1260"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9028f11106263c5cff66ee3a424fbdd6" id="r_a9028f11106263c5cff66ee3a424fbdd6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9028f11106263c5cff66ee3a424fbdd6">closest_fruit_strategy</a> (<a class="el" href="structgame.html">game</a> *g, int i)</td></tr>
+<tr class="memdesc:a9028f11106263c5cff66ee3a424fbdd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">La stratégie qui essaie toujours d'atteindre le fruit le plus proche.  <br /></td></tr>
+<tr class="separator:a9028f11106263c5cff66ee3a424fbdd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa3f1bb1256ee34e131e8e20c0e0086c" id="r_aaa3f1bb1256ee34e131e8e20c0e0086c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa3f1bb1256ee34e131e8e20c0e0086c">score_strategy</a> (<a class="el" href="structgame.html">game</a> *g, int i)</td></tr>
+<tr class="memdesc:aaa3f1bb1256ee34e131e8e20c0e0086c"><td class="mdescLeft">&#160;</td><td class="mdescRight">La stratégie qui essaie de maximiser le score avant tout.  <br /></td></tr>
+<tr class="separator:aaa3f1bb1256ee34e131e8e20c0e0086c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a156a2bbf9a6a0181b1e2e46e19d3d03b" id="r_a156a2bbf9a6a0181b1e2e46e19d3d03b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a156a2bbf9a6a0181b1e2e46e19d3d03b">students_strategy</a> (<a class="el" href="structgame.html">game</a> *g, int i)</td></tr>
+<tr class="memdesc:a156a2bbf9a6a0181b1e2e46e19d3d03b"><td class="mdescLeft">&#160;</td><td class="mdescRight">La stratégie qui essaie de maximiser le nombre d'étudiants mangés avant tout.  <br /></td></tr>
+<tr class="separator:a156a2bbf9a6a0181b1e2e46e19d3d03b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a630cdcd2d19b09c11bab5a4f6c05b80f" id="r_a630cdcd2d19b09c11bab5a4f6c05b80f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a630cdcd2d19b09c11bab5a4f6c05b80f">distance_strategy</a> (<a class="el" href="structgame.html">game</a> *g, int i)</td></tr>
+<tr class="memdesc:a630cdcd2d19b09c11bab5a4f6c05b80f"><td class="mdescLeft">&#160;</td><td class="mdescRight">La stratégie qui essaie de maximiser la distance parcourue avant tout.  <br /></td></tr>
+<tr class="separator:a630cdcd2d19b09c11bab5a4f6c05b80f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f3fa6622bbc7abd3622da97ebb0231e" id="r_a4f3fa6622bbc7abd3622da97ebb0231e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4f3fa6622bbc7abd3622da97ebb0231e">time_strategy</a> (<a class="el" href="structgame.html">game</a> *g, int i)</td></tr>
+<tr class="memdesc:a4f3fa6622bbc7abd3622da97ebb0231e"><td class="mdescLeft">&#160;</td><td class="mdescRight">La stratégie qui essaie de maximiser le temps de survie avant tout.  <br /></td></tr>
+<tr class="separator:a4f3fa6622bbc7abd3622da97ebb0231e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a3cca236ab99a52378eaeff271a4d81fc" id="r_a3cca236ab99a52378eaeff271a4d81fc"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3cca236ab99a52378eaeff271a4d81fc">strat_funs</a> [<a class="el" href="#a540bf8d51500c3ddb234c457e7bc076ba37b314715ec66965e0b3de49b32a8276">STRAT_SIZE</a>])(<a class="el" href="structgame.html">game</a> *, int)</td></tr>
+<tr class="memdesc:a3cca236ab99a52378eaeff271a4d81fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tableau de fonctions de stratégie.  <br /></td></tr>
+<tr class="separator:a3cca236ab99a52378eaeff271a4d81fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80c42f069efdde0bf73f151c03eeb912" id="r_a80c42f069efdde0bf73f151c03eeb912"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a80c42f069efdde0bf73f151c03eeb912">strat_names</a> [<a class="el" href="#a540bf8d51500c3ddb234c457e7bc076ba37b314715ec66965e0b3de49b32a8276">STRAT_SIZE</a>]</td></tr>
+<tr class="memdesc:a80c42f069efdde0bf73f151c03eeb912"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tableau de noms de stratégies.  <br /></td></tr>
+<tr class="separator:a80c42f069efdde0bf73f151c03eeb912"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Fonctions de stratégie pour les IA. </p>
+<p>Ce sont les fonctions utilisées pour déterminer les mouvements des serpents contrôlés par l'IA. Une fonction de stratégie prend en entrée le jeu et l'index du serpent à modifier. Elle choisit la direction que le serpent utilisera pour sortir de la cellule actuelle et assigne cette direction au champ "move" du serpent.</p>
+<dl class="section attention"><dt>Attention</dt><dd>Un serpent ne peut pas sortir d'une cellule en revenant à la cellule d'où il vient. Par conséquent, la fonction de stratégie doit choisir parmi au maximum trois directions (la quatrième direction indisponible est celle d'où vient le serpent).</dd></dl>
+<dl class="section remark"><dt>Remarques</dt><dd>Vous devez écrire les fonctions de stratégie. En revanche, vous ne devez PAS les appeler vous-même. En effet, les stratégies sont appelées dans la boucle de jeu qui est déjà écrite. Chaque tour de la boucle de jeu consiste en les quatre étapes suivantes :<ol type="1">
+<li>Utiliser une fonction de génération pour générer de nouveaux objets (la fonction est choisie lors de la création du jeu).</li>
+<li>Mettre à jour les directions de déplacement des serpents contrôlés par les joueurs en fonction des entrées du clavier.</li>
+<li>Appliquer la fonction de stratégie pour mettre à jour les directions de déplacement des serpents contrôlés par l'IA (les fonctions sont choisies lors de la création du jeu).</li>
+<li>Implémenter le tour pour tous les serpents en appelant la fonction "implement_turn_all_snakes". </li>
+</ol>
+</dd></dl>
+
+<p class="definition">Définition dans le fichier <a class="el" href="project__strats_8h_source.html">project_strats.h</a>.</p>
+</div><h2 class="groupheader">Documentation du type de l'énumération</h2>
+<a id="a540bf8d51500c3ddb234c457e7bc076b" name="a540bf8d51500c3ddb234c457e7bc076b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a540bf8d51500c3ddb234c457e7bc076b">&#9670;&#160;</a></span>strat</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a540bf8d51500c3ddb234c457e7bc076b">strat</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Noms internes des stratégies disponibles. </p>
+<p>Pour ajouter une nouvelle fonction de stratégie, vous devez ajouter un nouveau nom interne pour cette stratégie, à la fin de la liste (avant STRAT_SIZE). Ensuite, vous devez compléter les trois étapes suivantes : 1) Écrire la fonction de stratégie. 2) Ajouter le nom de la fonction à la fin du tableau strategy_funs dans project_objgen.c (ce tableau contient toutes les fonctions de stratégie). 3) Ajouter une chaîne décrivant la stratégie à la fin du tableau strategy_names dans project_objgen.c (cette chaîne sera affichée dans l'interface). </p>
+<table class="fieldtable">
+<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><a id="a540bf8d51500c3ddb234c457e7bc076ba64db1ee4969d1965992249eec1b2960b" name="a540bf8d51500c3ddb234c457e7bc076ba64db1ee4969d1965992249eec1b2960b"></a>STRAT_EMPTY&#160;</td><td class="fielddoc"><p>Ne fait rien. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a540bf8d51500c3ddb234c457e7bc076ba89ab9c346e06ec88671c0eda3996b248" name="a540bf8d51500c3ddb234c457e7bc076ba89ab9c346e06ec88671c0eda3996b248"></a>STRAT_CLOSESTFRUIT&#160;</td><td class="fielddoc"><p>Essaie d'atteindre le fruit le plus proche. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a540bf8d51500c3ddb234c457e7bc076baec6882970324d2640651cd8444da9ca6" name="a540bf8d51500c3ddb234c457e7bc076baec6882970324d2640651cd8444da9ca6"></a>STRAT_SCORE&#160;</td><td class="fielddoc"><p>Essaie de maximiser le score. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a540bf8d51500c3ddb234c457e7bc076bad585fa51945f33b831526607e93d523a" name="a540bf8d51500c3ddb234c457e7bc076bad585fa51945f33b831526607e93d523a"></a>STRAT_STUDENTS&#160;</td><td class="fielddoc"><p>Essaie de maximiser le nombre d'étudiants mangés. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a540bf8d51500c3ddb234c457e7bc076baec6512811ae1ea5c44cbf85240214878" name="a540bf8d51500c3ddb234c457e7bc076baec6512811ae1ea5c44cbf85240214878"></a>STRAT_DISTANCE&#160;</td><td class="fielddoc"><p>Essaie de maximiser la distance parcourue. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a540bf8d51500c3ddb234c457e7bc076bad354113c8c9b9dd2930832d189e87945" name="a540bf8d51500c3ddb234c457e7bc076bad354113c8c9b9dd2930832d189e87945"></a>STRAT_TIME&#160;</td><td class="fielddoc"><p>Essaie de maximiser le temps de survie. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a540bf8d51500c3ddb234c457e7bc076ba37b314715ec66965e0b3de49b32a8276" name="a540bf8d51500c3ddb234c457e7bc076ba37b314715ec66965e0b3de49b32a8276"></a>STRAT_SIZE&#160;</td><td class="fielddoc"><p>Nombre de stratégies. </p>
+</td></tr>
+</table>
+
+<p class="definition">Définition à la ligne <a class="el" href="project__strats_8h_source.html#l00051">51</a> du fichier <a class="el" href="project__strats_8h_source.html">project_strats.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a id="a46b595867dc7a5bf7ac28e13122e1260" name="a46b595867dc7a5bf7ac28e13122e1260"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46b595867dc7a5bf7ac28e13122e1260">&#9670;&#160;</a></span>empty_strategy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void empty_strategy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structgame.html">game</a> *</td>          <td class="paramname"><span class="paramname"><em>g</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>i</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Une stratégie qui ne fait rien. </p>
+
+</div>
+</div>
+<a id="a9028f11106263c5cff66ee3a424fbdd6" name="a9028f11106263c5cff66ee3a424fbdd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9028f11106263c5cff66ee3a424fbdd6">&#9670;&#160;</a></span>closest_fruit_strategy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void closest_fruit_strategy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structgame.html">game</a> *</td>          <td class="paramname"><span class="paramname"><em>g</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>i</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>La stratégie qui essaie toujours d'atteindre le fruit le plus proche. </p>
+
+</div>
+</div>
+<a id="aaa3f1bb1256ee34e131e8e20c0e0086c" name="aaa3f1bb1256ee34e131e8e20c0e0086c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa3f1bb1256ee34e131e8e20c0e0086c">&#9670;&#160;</a></span>score_strategy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score_strategy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structgame.html">game</a> *</td>          <td class="paramname"><span class="paramname"><em>g</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>i</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>La stratégie qui essaie de maximiser le score avant tout. </p>
+
+</div>
+</div>
+<a id="a156a2bbf9a6a0181b1e2e46e19d3d03b" name="a156a2bbf9a6a0181b1e2e46e19d3d03b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a156a2bbf9a6a0181b1e2e46e19d3d03b">&#9670;&#160;</a></span>students_strategy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void students_strategy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structgame.html">game</a> *</td>          <td class="paramname"><span class="paramname"><em>g</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>i</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>La stratégie qui essaie de maximiser le nombre d'étudiants mangés avant tout. </p>
+
+</div>
+</div>
+<a id="a630cdcd2d19b09c11bab5a4f6c05b80f" name="a630cdcd2d19b09c11bab5a4f6c05b80f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a630cdcd2d19b09c11bab5a4f6c05b80f">&#9670;&#160;</a></span>distance_strategy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void distance_strategy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structgame.html">game</a> *</td>          <td class="paramname"><span class="paramname"><em>g</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>i</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>La stratégie qui essaie de maximiser la distance parcourue avant tout. </p>
+
+</div>
+</div>
+<a id="a4f3fa6622bbc7abd3622da97ebb0231e" name="a4f3fa6622bbc7abd3622da97ebb0231e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f3fa6622bbc7abd3622da97ebb0231e">&#9670;&#160;</a></span>time_strategy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void time_strategy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structgame.html">game</a> *</td>          <td class="paramname"><span class="paramname"><em>g</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>i</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>La stratégie qui essaie de maximiser le temps de survie avant tout. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des variables</h2>
+<a id="a3cca236ab99a52378eaeff271a4d81fc" name="a3cca236ab99a52378eaeff271a4d81fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cca236ab99a52378eaeff271a4d81fc">&#9670;&#160;</a></span>strat_funs</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* strat_funs[<a class="el" href="#a540bf8d51500c3ddb234c457e7bc076ba37b314715ec66965e0b3de49b32a8276">STRAT_SIZE</a>])(<a class="el" href="structgame.html">game</a> *, int) </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structgame.html">game</a> *</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tableau de fonctions de stratégie. </p>
+
+</div>
+</div>
+<a id="a80c42f069efdde0bf73f151c03eeb912" name="a80c42f069efdde0bf73f151c03eeb912"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80c42f069efdde0bf73f151c03eeb912">&#9670;&#160;</a></span>strat_names</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* strat_names[<a class="el" href="#a540bf8d51500c3ddb234c457e7bc076ba37b314715ec66965e0b3de49b32a8276">STRAT_SIZE</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tableau de noms de stratégies. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="project__strats_8h.html">project_strats.h</a></li>
+    <li class="footer">Généré par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>

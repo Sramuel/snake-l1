@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ICSG:  Fichier source de project_masks.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">ICSG
+   </div>
+   <div id="projectbrief">ICSG : The InitC Snake Game</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('project__masks_8h_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">project_masks.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="project__masks_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifndef _PROJECT_MASKS_H_</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#define _PROJECT_MASKS_H_</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> <span class="comment">/*  __  __    _    ____  _  ______   */</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> <span class="comment">/* |  \/  |  / \  / ___|| |/ / ___|  */</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> <span class="comment">/* | |\/| | / _ \ \___ \| &#39; /\___ \  */</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> <span class="comment">/* | |  | |/ ___ \ ___) | . \ ___) | */</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> <span class="comment">/* |_|  |_/_/   \_\____/|_|\_\____/  */</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span></div>
+<div class="foldopen" id="foldopen00036" data-start="{" data-end="};">
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="structmask.html">   36</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="structmask.html#a318dc897fbcde3d1413b0128a9b0d342">   37</a></span>  <span class="keywordtype">int</span> <a class="code hl_variable" href="structmask.html#a318dc897fbcde3d1413b0128a9b0d342">hsize</a>;    </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="structmask.html#a1d4a889cb100e146d6906e2db23018ca">   38</a></span>  <span class="keywordtype">int</span> <a class="code hl_variable" href="structmask.html#a1d4a889cb100e146d6906e2db23018ca">vsize</a>;    </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="structmask.html#ad1b08ed0fe2f80b4f75658931bb078a7">   39</a></span>  <span class="keywordtype">int</span> <a class="code hl_variable" href="structmask.html#ad1b08ed0fe2f80b4f75658931bb078a7">nbmasked</a>; </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="structmask.html#a0ca41b6d120fdd4f28d20bebf784e7b7">   42</a></span>  <span class="keywordtype">bool</span> *<a class="code hl_variable" href="structmask.html#a0ca41b6d120fdd4f28d20bebf784e7b7">grid</a>; </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>} <a class="code hl_struct" href="structmask.html">mask</a>;</div>
+</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="project__masks_8h.html#aa62a8aa6f80d3e8b5911a7ca9776eb6e">   54</a></span><a class="code hl_struct" href="structmask.html">mask</a> *<a class="code hl_function" href="project__masks_8h.html#aa62a8aa6f80d3e8b5911a7ca9776eb6e">create_empty_mask</a>(<span class="keywordtype">int</span> hsize, </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                        <span class="keywordtype">int</span> vsize </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="project__masks_8h.html#acf4c79e823d25fab1440bd39b6fb3e1c">   62</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="project__masks_8h.html#acf4c79e823d25fab1440bd39b6fb3e1c">delete_mask</a>(<a class="code hl_struct" href="structmask.html">mask</a>* m </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="project__masks_8h.html#a9e93770ea5c1b53952d70251bb168119">   76</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="project__masks_8h.html#a9e93770ea5c1b53952d70251bb168119">resize_mask</a>(<a class="code hl_struct" href="structmask.html">mask</a> *m,    </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                 <span class="keywordtype">int</span> nhsize, </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                 <span class="keywordtype">int</span> nvsize  </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="project__masks_8h.html#aa2f08a6342212183ac1a07051ed54e31">   85</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="project__masks_8h.html#aa2f08a6342212183ac1a07051ed54e31">print_mask</a>(<a class="code hl_struct" href="structmask.html">mask</a> *m </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="project__masks_8h.html#a02ab2096d454983d02788e466ab52e80">  107</a></span><a class="code hl_struct" href="structmask.html">mask</a> *<a class="code hl_function" href="project__masks_8h.html#a02ab2096d454983d02788e466ab52e80">read_mask</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *path</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="preprocessor">#endif </span><span class="comment">// _PROJECT_MASKS_H_</span></div>
+<div class="ttc" id="aproject__masks_8h_html_a02ab2096d454983d02788e466ab52e80"><div class="ttname"><a href="project__masks_8h.html#a02ab2096d454983d02788e466ab52e80">read_mask</a></div><div class="ttdeci">mask * read_mask(const char *path)</div><div class="ttdoc">Génération d&#39;un masque à partir d&#39;un fichier.</div></div>
+<div class="ttc" id="aproject__masks_8h_html_a9e93770ea5c1b53952d70251bb168119"><div class="ttname"><a href="project__masks_8h.html#a9e93770ea5c1b53952d70251bb168119">resize_mask</a></div><div class="ttdeci">void resize_mask(mask *m, int nhsize, int nvsize)</div><div class="ttdoc">Redimensionnement d&#39;un masque.</div></div>
+<div class="ttc" id="aproject__masks_8h_html_aa2f08a6342212183ac1a07051ed54e31"><div class="ttname"><a href="project__masks_8h.html#aa2f08a6342212183ac1a07051ed54e31">print_mask</a></div><div class="ttdeci">void print_mask(mask *m)</div><div class="ttdoc">Affichage d&#39;un masque sur le terminal (utile uniquement pour les tests).</div></div>
+<div class="ttc" id="aproject__masks_8h_html_aa62a8aa6f80d3e8b5911a7ca9776eb6e"><div class="ttname"><a href="project__masks_8h.html#aa62a8aa6f80d3e8b5911a7ca9776eb6e">create_empty_mask</a></div><div class="ttdeci">mask * create_empty_mask(int hsize, int vsize)</div><div class="ttdoc">Allocation d&#39;un masque vide sur le tas : aucune cellule n&#39;est masquée.</div></div>
+<div class="ttc" id="aproject__masks_8h_html_acf4c79e823d25fab1440bd39b6fb3e1c"><div class="ttname"><a href="project__masks_8h.html#acf4c79e823d25fab1440bd39b6fb3e1c">delete_mask</a></div><div class="ttdeci">void delete_mask(mask *m)</div><div class="ttdoc">Libération de la mémoire allouée pour un masque.</div></div>
+<div class="ttc" id="astructmask_html"><div class="ttname"><a href="structmask.html">mask</a></div><div class="ttdoc">Type utilisé pour représenter un masque.</div><div class="ttdef"><b>Definition</b> <a href="#l00036">project_masks.h:36</a></div></div>
+<div class="ttc" id="astructmask_html_a0ca41b6d120fdd4f28d20bebf784e7b7"><div class="ttname"><a href="structmask.html#a0ca41b6d120fdd4f28d20bebf784e7b7">mask::grid</a></div><div class="ttdeci">bool * grid</div><div class="ttdef"><b>Definition</b> <a href="#l00042">project_masks.h:42</a></div></div>
+<div class="ttc" id="astructmask_html_a1d4a889cb100e146d6906e2db23018ca"><div class="ttname"><a href="structmask.html#a1d4a889cb100e146d6906e2db23018ca">mask::vsize</a></div><div class="ttdeci">int vsize</div><div class="ttdoc">Taille verticale.</div><div class="ttdef"><b>Definition</b> <a href="#l00038">project_masks.h:38</a></div></div>
+<div class="ttc" id="astructmask_html_a318dc897fbcde3d1413b0128a9b0d342"><div class="ttname"><a href="structmask.html#a318dc897fbcde3d1413b0128a9b0d342">mask::hsize</a></div><div class="ttdeci">int hsize</div><div class="ttdoc">Taille horizontale.</div><div class="ttdef"><b>Definition</b> <a href="#l00037">project_masks.h:37</a></div></div>
+<div class="ttc" id="astructmask_html_ad1b08ed0fe2f80b4f75658931bb078a7"><div class="ttname"><a href="structmask.html#ad1b08ed0fe2f80b4f75658931bb078a7">mask::nbmasked</a></div><div class="ttdeci">int nbmasked</div><div class="ttdef"><b>Definition</b> <a href="#l00039">project_masks.h:39</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="project__masks_8h.html">project_masks.h</a></li>
+    <li class="footer">Généré par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>

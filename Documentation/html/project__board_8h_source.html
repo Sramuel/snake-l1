@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ICSG:  Fichier source de project_board.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">ICSG
+   </div>
+   <div id="projectbrief">ICSG : The InitC Snake Game</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('project__board_8h_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">project_board.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="project__board_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifndef _BOARD_H_</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#define _BOARD_H_</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> <span class="comment">/*  ____   ___    _    ____  ____  ____   */</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> <span class="comment">/* | __ ) / _ \  / \  |  _ \|  _ \/ ___|  */</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> <span class="comment">/* |  _ \| | | |/ _ \ | |_) | | | \___ \  */</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> <span class="comment">/* | |_) | |_| / ___ \|  _ &lt;| |_| |___) | */</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> <span class="comment">/* |____/ \___/_/   \_\_| \_\____/|____/  */</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &quot;<a class="code" href="project__masks_8h.html">project_masks.h</a>&quot;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &quot;<a class="code" href="project__tools_8h.html">project_tools.h</a>&quot;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span></div>
+<div class="foldopen" id="foldopen00028" data-start="{" data-end="};">
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="project__board_8h.html#a99f26e6ee9fcd62f75203b5402df8098">   28</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="project__board_8h.html#a99f26e6ee9fcd62f75203b5402df8098aba595d8bca8bc5e67c37c0a9d89becfa">   29</a></span>  <a class="code hl_enumvalue" href="project__board_8h.html#a99f26e6ee9fcd62f75203b5402df8098aba595d8bca8bc5e67c37c0a9d89becfa">UP</a>,             </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="project__board_8h.html#a99f26e6ee9fcd62f75203b5402df8098aec8379af7490bb9eaaf579cf17876f38">   30</a></span>  <a class="code hl_enumvalue" href="project__board_8h.html#a99f26e6ee9fcd62f75203b5402df8098aec8379af7490bb9eaaf579cf17876f38">RIGHT</a>,          </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="project__board_8h.html#a99f26e6ee9fcd62f75203b5402df8098a9b0b4a95b99523966e0e34ffdadac9da">   31</a></span>  <a class="code hl_enumvalue" href="project__board_8h.html#a99f26e6ee9fcd62f75203b5402df8098a9b0b4a95b99523966e0e34ffdadac9da">DOWN</a>,           </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="project__board_8h.html#a99f26e6ee9fcd62f75203b5402df8098adb45120aafd37a973140edee24708065">   32</a></span>  <a class="code hl_enumvalue" href="project__board_8h.html#a99f26e6ee9fcd62f75203b5402df8098adb45120aafd37a973140edee24708065">LEFT</a>,           </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="project__board_8h.html#a99f26e6ee9fcd62f75203b5402df8098a55658b2c82415c5e4c1564e2a70d2a1f">   33</a></span>  <a class="code hl_enumvalue" href="project__board_8h.html#a99f26e6ee9fcd62f75203b5402df8098a55658b2c82415c5e4c1564e2a70d2a1f">DIRECTION_SIZE</a>, </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>} <a class="code hl_enumeration" href="project__board_8h.html#a99f26e6ee9fcd62f75203b5402df8098">direction</a>;</div>
+</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="project__board_8h.html#adb9a333e46cff165334b89867da468f0">   43</a></span><a class="code hl_enumeration" href="project__board_8h.html#a99f26e6ee9fcd62f75203b5402df8098">direction</a> <a class="code hl_function" href="project__board_8h.html#adb9a333e46cff165334b89867da468f0">opposite</a>(<a class="code hl_enumeration" href="project__board_8h.html#a99f26e6ee9fcd62f75203b5402df8098">direction</a> dir </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span></div>
+<div class="foldopen" id="foldopen00056" data-start="{" data-end="};">
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="project__board_8h.html#ad03408aabe16bb53c780fae6cf3910f9">   56</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="project__board_8h.html#ad03408aabe16bb53c780fae6cf3910f9a2f0d18fc0d0fa4a6cd92dc328501874d">   57</a></span>  <a class="code hl_enumvalue" href="project__board_8h.html#ad03408aabe16bb53c780fae6cf3910f9a2f0d18fc0d0fa4a6cd92dc328501874d">EMPTY</a>,       </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="project__board_8h.html#ad03408aabe16bb53c780fae6cf3910f9a7d71275d46953bd71d2c6b11e219ee24">   58</a></span>  <a class="code hl_enumvalue" href="project__board_8h.html#ad03408aabe16bb53c780fae6cf3910f9a7d71275d46953bd71d2c6b11e219ee24">SNAKE</a>,       </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="project__board_8h.html#ad03408aabe16bb53c780fae6cf3910f9a5484ec37ffd1fcffb7aba549a4839910">   59</a></span>  <a class="code hl_enumvalue" href="project__board_8h.html#ad03408aabe16bb53c780fae6cf3910f9a5484ec37ffd1fcffb7aba549a4839910">APPLE</a>,       </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="project__board_8h.html#ad03408aabe16bb53c780fae6cf3910f9a9eeb3855ef2e9d80d53b743c17b48285">   60</a></span>  <a class="code hl_enumvalue" href="project__board_8h.html#ad03408aabe16bb53c780fae6cf3910f9a9eeb3855ef2e9d80d53b743c17b48285">CHERRY</a>,      </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="project__board_8h.html#ad03408aabe16bb53c780fae6cf3910f9adfb0867c3e2d1ac58389aea3b70af5b7">   61</a></span>  <a class="code hl_enumvalue" href="project__board_8h.html#ad03408aabe16bb53c780fae6cf3910f9adfb0867c3e2d1ac58389aea3b70af5b7">BANANA</a>,      </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="project__board_8h.html#ad03408aabe16bb53c780fae6cf3910f9aeea86f5068655716ca803ecb5ffd8ec8">   62</a></span>  <a class="code hl_enumvalue" href="project__board_8h.html#ad03408aabe16bb53c780fae6cf3910f9aeea86f5068655716ca803ecb5ffd8ec8">GRAPES</a>,      </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="project__board_8h.html#ad03408aabe16bb53c780fae6cf3910f9a9f1aa0f7ed3d1cb56a120bdad75843a4">   63</a></span>  <a class="code hl_enumvalue" href="project__board_8h.html#ad03408aabe16bb53c780fae6cf3910f9a9f1aa0f7ed3d1cb56a120bdad75843a4">PINEAPPLE</a>,   </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="project__board_8h.html#ad03408aabe16bb53c780fae6cf3910f9a65e90109a047c6f58260395f659cd41b">   64</a></span>  <a class="code hl_enumvalue" href="project__board_8h.html#ad03408aabe16bb53c780fae6cf3910f9a65e90109a047c6f58260395f659cd41b">STUDENT</a>,     </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="project__board_8h.html#ad03408aabe16bb53c780fae6cf3910f9a96d7ebf22ded4ef7de58d5f22000f923">   65</a></span>  <a class="code hl_enumvalue" href="project__board_8h.html#ad03408aabe16bb53c780fae6cf3910f9a96d7ebf22ded4ef7de58d5f22000f923">CHILI</a>,       </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="project__board_8h.html#ad03408aabe16bb53c780fae6cf3910f9a193ed7bf3e327c6d18f7e52cf631803a">   66</a></span>  <a class="code hl_enumvalue" href="project__board_8h.html#ad03408aabe16bb53c780fae6cf3910f9a193ed7bf3e327c6d18f7e52cf631803a">MUSHROOM</a>,    </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="project__board_8h.html#ad03408aabe16bb53c780fae6cf3910f9ac2274dd687624cb1e05042a61768b3e4">   67</a></span>  <a class="code hl_enumvalue" href="project__board_8h.html#ad03408aabe16bb53c780fae6cf3910f9ac2274dd687624cb1e05042a61768b3e4">OBJECT_SIZE</a>, </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>} <a class="code hl_enumeration" href="project__board_8h.html#ad03408aabe16bb53c780fae6cf3910f9">object</a>;</div>
+</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span></div>
+<div class="foldopen" id="foldopen00107" data-start="{" data-end="};">
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="structboard.html">  107</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="structboard.html#a318dc897fbcde3d1413b0128a9b0d342">  108</a></span>  <span class="keywordtype">int</span> <a class="code hl_variable" href="structboard.html#a318dc897fbcde3d1413b0128a9b0d342">hsize</a>;   </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="structboard.html#a1d4a889cb100e146d6906e2db23018ca">  109</a></span>  <span class="keywordtype">int</span> <a class="code hl_variable" href="structboard.html#a1d4a889cb100e146d6906e2db23018ca">vsize</a>;   </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="structboard.html#a439227feff9d7f55384e8780cfc2eb82">  110</a></span>  <span class="keywordtype">int</span> <a class="code hl_variable" href="structboard.html#a439227feff9d7f55384e8780cfc2eb82">size</a>;    </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="structboard.html#a0889504203955b376fbb2895d9060cd8">  111</a></span>  <span class="keywordtype">int</span> <a class="code hl_variable" href="structboard.html#a0889504203955b376fbb2895d9060cd8">nb_food</a>; </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="structboard.html#ad7de2d37a97ff6b0b5484dbf9b1449c2">  114</a></span>  <span class="keywordtype">bool</span> *<a class="code hl_variable" href="structboard.html#ad7de2d37a97ff6b0b5484dbf9b1449c2">masked</a>; </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="structboard.html#a52f2eba3a06eb7921c78a253c217d7e5">  117</a></span>  <span class="keywordtype">object</span> *<a class="code hl_variable" href="structboard.html#a52f2eba3a06eb7921c78a253c217d7e5">objects</a>;    </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="structboard.html#a6aee0f8d943a10bea92917ac672aa906">  118</a></span>  <a class="code hl_enumeration" href="project__board_8h.html#a99f26e6ee9fcd62f75203b5402df8098">direction</a> *<a class="code hl_variable" href="structboard.html#a6aee0f8d943a10bea92917ac672aa906">indirs</a>;  </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="structboard.html#a9181fdedbace7dc56771230336b8b6d1">  119</a></span>  <a class="code hl_enumeration" href="project__board_8h.html#a99f26e6ee9fcd62f75203b5402df8098">direction</a> *<a class="code hl_variable" href="structboard.html#a9181fdedbace7dc56771230336b8b6d1">outdirs</a>; </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="structboard.html#ad0cbb3bf01e17413c2e6a34ef2af438e">  121</a></span>  <span class="keywordtype">int</span> <a class="code hl_variable" href="structboard.html#ad0cbb3bf01e17413c2e6a34ef2af438e">empty_cells_count</a>;    </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="structboard.html#a1f91eefc2a055b9dbf99a8a1dcce25ed">  122</a></span>  <span class="keywordtype">int</span> *<a class="code hl_variable" href="structboard.html#a1f91eefc2a055b9dbf99a8a1dcce25ed">empty_cells_listing</a>; </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="structboard.html#a6d3f1e1b798936f1c83638d341da417d">  123</a></span>  <span class="keywordtype">int</span> *<a class="code hl_variable" href="structboard.html#a6d3f1e1b798936f1c83638d341da417d">empty_cells_indices</a>; </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>} <a class="code hl_struct" href="structboard.html">board</a>;</div>
+</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="project__board_8h.html#a640bd47930eec6b97b2c623630595d9a">  134</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="project__board_8h.html#a640bd47930eec6b97b2c623630595d9a">get_adj_cell</a>(<a class="code hl_struct" href="structboard.html">board</a> *b,     </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>                 <span class="keywordtype">int</span> cell,     </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>                 <a class="code hl_enumeration" href="project__board_8h.html#a99f26e6ee9fcd62f75203b5402df8098">direction</a> dir </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>);</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno"><a class="line" href="project__board_8h.html#a4bef34994b67e16691585213c165f8ad">  146</a></span><a class="code hl_struct" href="structboard.html">board</a> *<a class="code hl_function" href="project__board_8h.html#a4bef34994b67e16691585213c165f8ad">new_board_nomask</a>(<span class="keywordtype">int</span> hsize, </div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>                        <span class="keywordtype">int</span> vsize  </div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>);</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span></div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="project__board_8h.html#aa1ec9dbc5fd746d23d0660e76fa87afa">  160</a></span><a class="code hl_struct" href="structboard.html">board</a> *<a class="code hl_function" href="project__board_8h.html#aa1ec9dbc5fd746d23d0660e76fa87afa">new_board_mask</a>(<a class="code hl_struct" href="structmask.html">mask</a> *m </div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>);</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="project__board_8h.html#ad0ffcc161fdef51a19d4245a54fab9de">  167</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="project__board_8h.html#ad0ffcc161fdef51a19d4245a54fab9de">delete_board</a>(<a class="code hl_struct" href="structboard.html">board</a> *b </div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>);</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span></div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno"><a class="line" href="project__board_8h.html#abaa57048d0c3eacaa4ca5bd4f8680244">  180</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="project__board_8h.html#abaa57048d0c3eacaa4ca5bd4f8680244">swap_empty_cells</a>(</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    <a class="code hl_struct" href="structboard.html">board</a> *b, </div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    <span class="keywordtype">int</span> i1,   </div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    <span class="keywordtype">int</span> i2    </div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>);</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span></div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno"><a class="line" href="project__board_8h.html#adb176512325b1bf87f98d46774876fe8">  200</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="project__board_8h.html#adb176512325b1bf87f98d46774876fe8">fill_cell_board</a>(<a class="code hl_struct" href="structboard.html">board</a> *b,  </div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>                     <span class="keywordtype">int</span> i,     </div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>                     <span class="keywordtype">object</span> obj </div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>);</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span></div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno"><a class="line" href="project__board_8h.html#ad77b0c5074caacba23f1445712ab004a">  215</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="project__board_8h.html#ad77b0c5074caacba23f1445712ab004a">empty_cell_board</a>(<a class="code hl_struct" href="structboard.html">board</a> *b, </div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>                      <span class="keywordtype">int</span> i     </div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>);</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span> </div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span><span class="preprocessor">#endif </span><span class="comment">// _BOARD_H_</span></div>
+<div class="ttc" id="aproject__board_8h_html_a4bef34994b67e16691585213c165f8ad"><div class="ttname"><a href="project__board_8h.html#a4bef34994b67e16691585213c165f8ad">new_board_nomask</a></div><div class="ttdeci">board * new_board_nomask(int hsize, int vsize)</div><div class="ttdoc">Alloue un nouveau plateau sur le tas. Variante sans masque.</div></div>
+<div class="ttc" id="aproject__board_8h_html_a640bd47930eec6b97b2c623630595d9a"><div class="ttname"><a href="project__board_8h.html#a640bd47930eec6b97b2c623630595d9a">get_adj_cell</a></div><div class="ttdeci">int get_adj_cell(board *b, int cell, direction dir)</div><div class="ttdoc">Calcule l&#39;index de la cellule adjacente à une cellule donnée dans une direction donnée.</div></div>
+<div class="ttc" id="aproject__board_8h_html_a99f26e6ee9fcd62f75203b5402df8098"><div class="ttname"><a href="project__board_8h.html#a99f26e6ee9fcd62f75203b5402df8098">direction</a></div><div class="ttdeci">direction</div><div class="ttdoc">Type énuméré utilisé pour représenter les quatre directions possibles à l&#39;intérieur d&#39;un plateau.</div><div class="ttdef"><b>Definition</b> <a href="#l00028">project_board.h:28</a></div></div>
+<div class="ttc" id="aproject__board_8h_html_a99f26e6ee9fcd62f75203b5402df8098a55658b2c82415c5e4c1564e2a70d2a1f"><div class="ttname"><a href="project__board_8h.html#a99f26e6ee9fcd62f75203b5402df8098a55658b2c82415c5e4c1564e2a70d2a1f">DIRECTION_SIZE</a></div><div class="ttdeci">@ DIRECTION_SIZE</div><div class="ttdoc">Nombre de directions.</div><div class="ttdef"><b>Definition</b> <a href="#l00033">project_board.h:33</a></div></div>
+<div class="ttc" id="aproject__board_8h_html_a99f26e6ee9fcd62f75203b5402df8098a9b0b4a95b99523966e0e34ffdadac9da"><div class="ttname"><a href="project__board_8h.html#a99f26e6ee9fcd62f75203b5402df8098a9b0b4a95b99523966e0e34ffdadac9da">DOWN</a></div><div class="ttdeci">@ DOWN</div><div class="ttdoc">Bas.</div><div class="ttdef"><b>Definition</b> <a href="#l00031">project_board.h:31</a></div></div>
+<div class="ttc" id="aproject__board_8h_html_a99f26e6ee9fcd62f75203b5402df8098aba595d8bca8bc5e67c37c0a9d89becfa"><div class="ttname"><a href="project__board_8h.html#a99f26e6ee9fcd62f75203b5402df8098aba595d8bca8bc5e67c37c0a9d89becfa">UP</a></div><div class="ttdeci">@ UP</div><div class="ttdoc">Haut.</div><div class="ttdef"><b>Definition</b> <a href="#l00029">project_board.h:29</a></div></div>
+<div class="ttc" id="aproject__board_8h_html_a99f26e6ee9fcd62f75203b5402df8098adb45120aafd37a973140edee24708065"><div class="ttname"><a href="project__board_8h.html#a99f26e6ee9fcd62f75203b5402df8098adb45120aafd37a973140edee24708065">LEFT</a></div><div class="ttdeci">@ LEFT</div><div class="ttdoc">Gauche.</div><div class="ttdef"><b>Definition</b> <a href="#l00032">project_board.h:32</a></div></div>
+<div class="ttc" id="aproject__board_8h_html_a99f26e6ee9fcd62f75203b5402df8098aec8379af7490bb9eaaf579cf17876f38"><div class="ttname"><a href="project__board_8h.html#a99f26e6ee9fcd62f75203b5402df8098aec8379af7490bb9eaaf579cf17876f38">RIGHT</a></div><div class="ttdeci">@ RIGHT</div><div class="ttdoc">Droite.</div><div class="ttdef"><b>Definition</b> <a href="#l00030">project_board.h:30</a></div></div>
+<div class="ttc" id="aproject__board_8h_html_aa1ec9dbc5fd746d23d0660e76fa87afa"><div class="ttname"><a href="project__board_8h.html#aa1ec9dbc5fd746d23d0660e76fa87afa">new_board_mask</a></div><div class="ttdeci">board * new_board_mask(mask *m)</div><div class="ttdoc">Alloue un nouveau plateau sur le tas. Variante avec masque.</div></div>
+<div class="ttc" id="aproject__board_8h_html_abaa57048d0c3eacaa4ca5bd4f8680244"><div class="ttname"><a href="project__board_8h.html#abaa57048d0c3eacaa4ca5bd4f8680244">swap_empty_cells</a></div><div class="ttdeci">void swap_empty_cells(board *b, int i1, int i2)</div><div class="ttdoc">Échange les positions de deux cellules vides dans le tableau empty_cells_listing qui liste les cellul...</div></div>
+<div class="ttc" id="aproject__board_8h_html_ad03408aabe16bb53c780fae6cf3910f9"><div class="ttname"><a href="project__board_8h.html#ad03408aabe16bb53c780fae6cf3910f9">object</a></div><div class="ttdeci">object</div><div class="ttdoc">Type énuméré utilisé pour représenter tous les objets pouvant être placés dans une cellule du plateau...</div><div class="ttdef"><b>Definition</b> <a href="#l00056">project_board.h:56</a></div></div>
+<div class="ttc" id="aproject__board_8h_html_ad03408aabe16bb53c780fae6cf3910f9a193ed7bf3e327c6d18f7e52cf631803a"><div class="ttname"><a href="project__board_8h.html#ad03408aabe16bb53c780fae6cf3910f9a193ed7bf3e327c6d18f7e52cf631803a">MUSHROOM</a></div><div class="ttdeci">@ MUSHROOM</div><div class="ttdoc">Champignon (diminue la vitesse, si pas au minimum)</div><div class="ttdef"><b>Definition</b> <a href="#l00066">project_board.h:66</a></div></div>
+<div class="ttc" id="aproject__board_8h_html_ad03408aabe16bb53c780fae6cf3910f9a2f0d18fc0d0fa4a6cd92dc328501874d"><div class="ttname"><a href="project__board_8h.html#ad03408aabe16bb53c780fae6cf3910f9a2f0d18fc0d0fa4a6cd92dc328501874d">EMPTY</a></div><div class="ttdeci">@ EMPTY</div><div class="ttdoc">Cellule vide.</div><div class="ttdef"><b>Definition</b> <a href="#l00057">project_board.h:57</a></div></div>
+<div class="ttc" id="aproject__board_8h_html_ad03408aabe16bb53c780fae6cf3910f9a5484ec37ffd1fcffb7aba549a4839910"><div class="ttname"><a href="project__board_8h.html#ad03408aabe16bb53c780fae6cf3910f9a5484ec37ffd1fcffb7aba549a4839910">APPLE</a></div><div class="ttdeci">@ APPLE</div><div class="ttdoc">Pomme (1 point + 1 longueur)</div><div class="ttdef"><b>Definition</b> <a href="#l00059">project_board.h:59</a></div></div>
+<div class="ttc" id="aproject__board_8h_html_ad03408aabe16bb53c780fae6cf3910f9a65e90109a047c6f58260395f659cd41b"><div class="ttname"><a href="project__board_8h.html#ad03408aabe16bb53c780fae6cf3910f9a65e90109a047c6f58260395f659cd41b">STUDENT</a></div><div class="ttdeci">@ STUDENT</div><div class="ttdoc">Étudiant (20 points + double longueur)</div><div class="ttdef"><b>Definition</b> <a href="#l00064">project_board.h:64</a></div></div>
+<div class="ttc" id="aproject__board_8h_html_ad03408aabe16bb53c780fae6cf3910f9a7d71275d46953bd71d2c6b11e219ee24"><div class="ttname"><a href="project__board_8h.html#ad03408aabe16bb53c780fae6cf3910f9a7d71275d46953bd71d2c6b11e219ee24">SNAKE</a></div><div class="ttdeci">@ SNAKE</div><div class="ttdoc">Section de serpent.</div><div class="ttdef"><b>Definition</b> <a href="#l00058">project_board.h:58</a></div></div>
+<div class="ttc" id="aproject__board_8h_html_ad03408aabe16bb53c780fae6cf3910f9a96d7ebf22ded4ef7de58d5f22000f923"><div class="ttname"><a href="project__board_8h.html#ad03408aabe16bb53c780fae6cf3910f9a96d7ebf22ded4ef7de58d5f22000f923">CHILI</a></div><div class="ttdeci">@ CHILI</div><div class="ttdoc">Piment (augmente la vitesse, si pas au maximum)</div><div class="ttdef"><b>Definition</b> <a href="#l00065">project_board.h:65</a></div></div>
+<div class="ttc" id="aproject__board_8h_html_ad03408aabe16bb53c780fae6cf3910f9a9eeb3855ef2e9d80d53b743c17b48285"><div class="ttname"><a href="project__board_8h.html#ad03408aabe16bb53c780fae6cf3910f9a9eeb3855ef2e9d80d53b743c17b48285">CHERRY</a></div><div class="ttdeci">@ CHERRY</div><div class="ttdoc">Cerise (2 points + 2 longueurs)</div><div class="ttdef"><b>Definition</b> <a href="#l00060">project_board.h:60</a></div></div>
+<div class="ttc" id="aproject__board_8h_html_ad03408aabe16bb53c780fae6cf3910f9a9f1aa0f7ed3d1cb56a120bdad75843a4"><div class="ttname"><a href="project__board_8h.html#ad03408aabe16bb53c780fae6cf3910f9a9f1aa0f7ed3d1cb56a120bdad75843a4">PINEAPPLE</a></div><div class="ttdeci">@ PINEAPPLE</div><div class="ttdoc">Ananas (5 points + 5 longueurs)</div><div class="ttdef"><b>Definition</b> <a href="#l00063">project_board.h:63</a></div></div>
+<div class="ttc" id="aproject__board_8h_html_ad03408aabe16bb53c780fae6cf3910f9ac2274dd687624cb1e05042a61768b3e4"><div class="ttname"><a href="project__board_8h.html#ad03408aabe16bb53c780fae6cf3910f9ac2274dd687624cb1e05042a61768b3e4">OBJECT_SIZE</a></div><div class="ttdeci">@ OBJECT_SIZE</div><div class="ttdoc">Nombre d&#39;objets.</div><div class="ttdef"><b>Definition</b> <a href="#l00067">project_board.h:67</a></div></div>
+<div class="ttc" id="aproject__board_8h_html_ad03408aabe16bb53c780fae6cf3910f9adfb0867c3e2d1ac58389aea3b70af5b7"><div class="ttname"><a href="project__board_8h.html#ad03408aabe16bb53c780fae6cf3910f9adfb0867c3e2d1ac58389aea3b70af5b7">BANANA</a></div><div class="ttdeci">@ BANANA</div><div class="ttdoc">Banane (3 points + 3 longueurs)</div><div class="ttdef"><b>Definition</b> <a href="#l00061">project_board.h:61</a></div></div>
+<div class="ttc" id="aproject__board_8h_html_ad03408aabe16bb53c780fae6cf3910f9aeea86f5068655716ca803ecb5ffd8ec8"><div class="ttname"><a href="project__board_8h.html#ad03408aabe16bb53c780fae6cf3910f9aeea86f5068655716ca803ecb5ffd8ec8">GRAPES</a></div><div class="ttdeci">@ GRAPES</div><div class="ttdoc">Raisins (4 points + 4 longueurs)</div><div class="ttdef"><b>Definition</b> <a href="#l00062">project_board.h:62</a></div></div>
+<div class="ttc" id="aproject__board_8h_html_ad0ffcc161fdef51a19d4245a54fab9de"><div class="ttname"><a href="project__board_8h.html#ad0ffcc161fdef51a19d4245a54fab9de">delete_board</a></div><div class="ttdeci">void delete_board(board *b)</div><div class="ttdoc">Libère la mémoire allouée pour un plateau.</div></div>
+<div class="ttc" id="aproject__board_8h_html_ad77b0c5074caacba23f1445712ab004a"><div class="ttname"><a href="project__board_8h.html#ad77b0c5074caacba23f1445712ab004a">empty_cell_board</a></div><div class="ttdeci">void empty_cell_board(board *b, int i)</div><div class="ttdoc">Vide une cellule du plateau.</div></div>
+<div class="ttc" id="aproject__board_8h_html_adb176512325b1bf87f98d46774876fe8"><div class="ttname"><a href="project__board_8h.html#adb176512325b1bf87f98d46774876fe8">fill_cell_board</a></div><div class="ttdeci">void fill_cell_board(board *b, int i, object obj)</div><div class="ttdoc">Remplit une cellule du plateau avec un objet.</div></div>
+<div class="ttc" id="aproject__board_8h_html_adb9a333e46cff165334b89867da468f0"><div class="ttname"><a href="project__board_8h.html#adb9a333e46cff165334b89867da468f0">opposite</a></div><div class="ttdeci">direction opposite(direction dir)</div><div class="ttdoc">Retourne la direction opposée d&#39;une direction donnée.</div></div>
+<div class="ttc" id="aproject__masks_8h_html"><div class="ttname"><a href="project__masks_8h.html">project_masks.h</a></div><div class="ttdoc">Masques.</div></div>
+<div class="ttc" id="aproject__tools_8h_html"><div class="ttname"><a href="project__tools_8h.html">project_tools.h</a></div><div class="ttdoc">Outils.</div></div>
+<div class="ttc" id="astructboard_html"><div class="ttname"><a href="structboard.html">board</a></div><div class="ttdoc">Le type utilisé pour représenter un plateau.</div><div class="ttdef"><b>Definition</b> <a href="#l00107">project_board.h:107</a></div></div>
+<div class="ttc" id="astructboard_html_a0889504203955b376fbb2895d9060cd8"><div class="ttname"><a href="structboard.html#a0889504203955b376fbb2895d9060cd8">board::nb_food</a></div><div class="ttdeci">int nb_food</div><div class="ttdef"><b>Definition</b> <a href="#l00111">project_board.h:111</a></div></div>
+<div class="ttc" id="astructboard_html_a1d4a889cb100e146d6906e2db23018ca"><div class="ttname"><a href="structboard.html#a1d4a889cb100e146d6906e2db23018ca">board::vsize</a></div><div class="ttdeci">int vsize</div><div class="ttdoc">Taille verticale.</div><div class="ttdef"><b>Definition</b> <a href="#l00109">project_board.h:109</a></div></div>
+<div class="ttc" id="astructboard_html_a1f91eefc2a055b9dbf99a8a1dcce25ed"><div class="ttname"><a href="structboard.html#a1f91eefc2a055b9dbf99a8a1dcce25ed">board::empty_cells_listing</a></div><div class="ttdeci">int * empty_cells_listing</div><div class="ttdoc">Tableau qui liste les cellules vides.</div><div class="ttdef"><b>Definition</b> <a href="#l00122">project_board.h:122</a></div></div>
+<div class="ttc" id="astructboard_html_a318dc897fbcde3d1413b0128a9b0d342"><div class="ttname"><a href="structboard.html#a318dc897fbcde3d1413b0128a9b0d342">board::hsize</a></div><div class="ttdeci">int hsize</div><div class="ttdoc">Taille horizontale.</div><div class="ttdef"><b>Definition</b> <a href="#l00108">project_board.h:108</a></div></div>
+<div class="ttc" id="astructboard_html_a439227feff9d7f55384e8780cfc2eb82"><div class="ttname"><a href="structboard.html#a439227feff9d7f55384e8780cfc2eb82">board::size</a></div><div class="ttdeci">int size</div><div class="ttdoc">Nombre total de cellules (hsize * vsize).</div><div class="ttdef"><b>Definition</b> <a href="#l00110">project_board.h:110</a></div></div>
+<div class="ttc" id="astructboard_html_a52f2eba3a06eb7921c78a253c217d7e5"><div class="ttname"><a href="structboard.html#a52f2eba3a06eb7921c78a253c217d7e5">board::objects</a></div><div class="ttdeci">object * objects</div><div class="ttdoc">Tableau d&#39;objets.</div><div class="ttdef"><b>Definition</b> <a href="#l00117">project_board.h:117</a></div></div>
+<div class="ttc" id="astructboard_html_a6aee0f8d943a10bea92917ac672aa906"><div class="ttname"><a href="structboard.html#a6aee0f8d943a10bea92917ac672aa906">board::indirs</a></div><div class="ttdeci">direction * indirs</div><div class="ttdoc">Tableau des directions d&#39;entrée des serpents.</div><div class="ttdef"><b>Definition</b> <a href="#l00118">project_board.h:118</a></div></div>
+<div class="ttc" id="astructboard_html_a6d3f1e1b798936f1c83638d341da417d"><div class="ttname"><a href="structboard.html#a6d3f1e1b798936f1c83638d341da417d">board::empty_cells_indices</a></div><div class="ttdeci">int * empty_cells_indices</div><div class="ttdef"><b>Definition</b> <a href="#l00123">project_board.h:123</a></div></div>
+<div class="ttc" id="astructboard_html_a9181fdedbace7dc56771230336b8b6d1"><div class="ttname"><a href="structboard.html#a9181fdedbace7dc56771230336b8b6d1">board::outdirs</a></div><div class="ttdeci">direction * outdirs</div><div class="ttdoc">Tableau des directions de sortie des serpents.</div><div class="ttdef"><b>Definition</b> <a href="#l00119">project_board.h:119</a></div></div>
+<div class="ttc" id="astructboard_html_ad0cbb3bf01e17413c2e6a34ef2af438e"><div class="ttname"><a href="structboard.html#ad0cbb3bf01e17413c2e6a34ef2af438e">board::empty_cells_count</a></div><div class="ttdeci">int empty_cells_count</div><div class="ttdoc">Nombre de cellules vides.</div><div class="ttdef"><b>Definition</b> <a href="#l00121">project_board.h:121</a></div></div>
+<div class="ttc" id="astructboard_html_ad7de2d37a97ff6b0b5484dbf9b1449c2"><div class="ttname"><a href="structboard.html#ad7de2d37a97ff6b0b5484dbf9b1449c2">board::masked</a></div><div class="ttdeci">bool * masked</div><div class="ttdef"><b>Definition</b> <a href="#l00114">project_board.h:114</a></div></div>
+<div class="ttc" id="astructmask_html"><div class="ttname"><a href="structmask.html">mask</a></div><div class="ttdoc">Type utilisé pour représenter un masque.</div><div class="ttdef"><b>Definition</b> <a href="project__masks_8h_source.html#l00036">project_masks.h:36</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="project__board_8h.html">project_board.h</a></li>
+    <li class="footer">Généré par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>

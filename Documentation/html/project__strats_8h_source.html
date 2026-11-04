@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ICSG:  Fichier source de project_strats.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">ICSG
+   </div>
+   <div id="projectbrief">ICSG : The InitC Snake Game</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('project__strats_8h_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">project_strats.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="project__strats_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#ifndef _PROJECT_STRATS_H_</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#define _PROJECT_STRATS_H_</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> <span class="comment">/*  ____  _             _             _              __              _   _               _    ___      */</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> <span class="comment">/* / ___|| |_ _ __ __ _| |_ ___  __ _(_) ___  ___   / _| ___  _ __  | |_| |__   ___     / \  |_ _|___  */</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> <span class="comment">/* \___ \| __| &#39;__/ _` | __/ _ \/ _` | |/ _ \/ __| | |_ / _ \| &#39;__| | __| &#39;_ \ / _ \   / _ \  | |/ __| */</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> <span class="comment">/*  ___) | |_| | | (_| | ||  __/ (_| | |  __/\__ \ |  _| (_) | |    | |_| | | |  __/  / ___ \ | |\__ \ */</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> <span class="comment">/* |____/ \__|_|  \__,_|\__\___|\__, |_|\___||___/ |_|  \___/|_|     \__|_| |_|\___| /_/   \_\___|___/ */</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> <span class="comment">/*                              |___/                                                                  */</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &quot;<a class="code" href="project__game_8h.html">project_game.h</a>&quot;</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#include &quot;<a class="code" href="project__tools_8h.html">project_tools.h</a>&quot;</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span></div>
+<div class="foldopen" id="foldopen00051" data-start="{" data-end="};">
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="project__strats_8h.html#a540bf8d51500c3ddb234c457e7bc076b">   51</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="project__strats_8h.html#a540bf8d51500c3ddb234c457e7bc076ba64db1ee4969d1965992249eec1b2960b">   52</a></span>    <a class="code hl_enumvalue" href="project__strats_8h.html#a540bf8d51500c3ddb234c457e7bc076ba64db1ee4969d1965992249eec1b2960b">STRAT_EMPTY</a>,        </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="project__strats_8h.html#a540bf8d51500c3ddb234c457e7bc076ba89ab9c346e06ec88671c0eda3996b248">   53</a></span>    <a class="code hl_enumvalue" href="project__strats_8h.html#a540bf8d51500c3ddb234c457e7bc076ba89ab9c346e06ec88671c0eda3996b248">STRAT_CLOSESTFRUIT</a>, </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="project__strats_8h.html#a540bf8d51500c3ddb234c457e7bc076baec6882970324d2640651cd8444da9ca6">   54</a></span>    <a class="code hl_enumvalue" href="project__strats_8h.html#a540bf8d51500c3ddb234c457e7bc076baec6882970324d2640651cd8444da9ca6">STRAT_SCORE</a>,        </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="project__strats_8h.html#a540bf8d51500c3ddb234c457e7bc076bad585fa51945f33b831526607e93d523a">   55</a></span>    <a class="code hl_enumvalue" href="project__strats_8h.html#a540bf8d51500c3ddb234c457e7bc076bad585fa51945f33b831526607e93d523a">STRAT_STUDENTS</a>,     </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="project__strats_8h.html#a540bf8d51500c3ddb234c457e7bc076baec6512811ae1ea5c44cbf85240214878">   56</a></span>    <a class="code hl_enumvalue" href="project__strats_8h.html#a540bf8d51500c3ddb234c457e7bc076baec6512811ae1ea5c44cbf85240214878">STRAT_DISTANCE</a>,     </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="project__strats_8h.html#a540bf8d51500c3ddb234c457e7bc076bad354113c8c9b9dd2930832d189e87945">   57</a></span>    <a class="code hl_enumvalue" href="project__strats_8h.html#a540bf8d51500c3ddb234c457e7bc076bad354113c8c9b9dd2930832d189e87945">STRAT_TIME</a>,         </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="project__strats_8h.html#a540bf8d51500c3ddb234c457e7bc076ba37b314715ec66965e0b3de49b32a8276">   58</a></span>    <a class="code hl_enumvalue" href="project__strats_8h.html#a540bf8d51500c3ddb234c457e7bc076ba37b314715ec66965e0b3de49b32a8276">STRAT_SIZE</a>,         </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>} <a class="code hl_enumeration" href="project__strats_8h.html#a540bf8d51500c3ddb234c457e7bc076b">strat</a>;</div>
+</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="keyword">extern</span> void (*<a class="code hl_variable" href="project__strats_8h.html#a3cca236ab99a52378eaeff271a4d81fc">strat_funs</a>[<a class="code hl_enumvalue" href="project__strats_8h.html#a540bf8d51500c3ddb234c457e7bc076ba37b314715ec66965e0b3de49b32a8276">STRAT_SIZE</a>]) (<a class="code hl_struct" href="structgame.html">game</a>*, int);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_variable" href="project__strats_8h.html#a80c42f069efdde0bf73f151c03eeb912">strat_names</a>[<a class="code hl_enumvalue" href="project__strats_8h.html#a540bf8d51500c3ddb234c457e7bc076ba37b314715ec66965e0b3de49b32a8276">STRAT_SIZE</a>];</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">/****************************/</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">/*+ Fonctions de stratégie +*/</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">/****************************/</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="project__strats_8h.html#a46b595867dc7a5bf7ac28e13122e1260">   79</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="project__strats_8h.html#a46b595867dc7a5bf7ac28e13122e1260">empty_strategy</a>(<a class="code hl_struct" href="structgame.html">game</a> *g, <span class="comment">// Le jeu.</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                    <span class="keywordtype">int</span> i    <span class="comment">// L&#39;index du serpent.</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="project__strats_8h.html#a9028f11106263c5cff66ee3a424fbdd6">   87</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="project__strats_8h.html#a9028f11106263c5cff66ee3a424fbdd6">closest_fruit_strategy</a>(<a class="code hl_struct" href="structgame.html">game</a> *g, <span class="comment">// Le jeu.</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                            <span class="keywordtype">int</span> i    <span class="comment">// L&#39;index du serpent.</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="project__strats_8h.html#aaa3f1bb1256ee34e131e8e20c0e0086c">   95</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="project__strats_8h.html#aaa3f1bb1256ee34e131e8e20c0e0086c">score_strategy</a>(<a class="code hl_struct" href="structgame.html">game</a> *g, <span class="comment">// Le jeu.</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                    <span class="keywordtype">int</span> i    <span class="comment">// L&#39;index du serpent.</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="project__strats_8h.html#a156a2bbf9a6a0181b1e2e46e19d3d03b">  103</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="project__strats_8h.html#a156a2bbf9a6a0181b1e2e46e19d3d03b">students_strategy</a>(<a class="code hl_struct" href="structgame.html">game</a> *g, <span class="comment">// Le jeu.</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>                       <span class="keywordtype">int</span> i    <span class="comment">// L&#39;index du serpent.</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="project__strats_8h.html#a630cdcd2d19b09c11bab5a4f6c05b80f">  111</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="project__strats_8h.html#a630cdcd2d19b09c11bab5a4f6c05b80f">distance_strategy</a>(<a class="code hl_struct" href="structgame.html">game</a> *g, <span class="comment">// Le jeu.</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>                       <span class="keywordtype">int</span> i    <span class="comment">// L&#39;index du serpent.</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="project__strats_8h.html#a4f3fa6622bbc7abd3622da97ebb0231e">  119</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="project__strats_8h.html#a4f3fa6622bbc7abd3622da97ebb0231e">time_strategy</a>(<a class="code hl_struct" href="structgame.html">game</a> *g, <span class="comment">// Le jeu.</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>                   <span class="keywordtype">int</span> i    <span class="comment">// L&#39;index du serpent.</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>);</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="preprocessor">#endif </span><span class="comment">// _PROJECT_STRATS_H_</span></div>
+<div class="ttc" id="aproject__game_8h_html"><div class="ttname"><a href="project__game_8h.html">project_game.h</a></div><div class="ttdoc">Jeu.</div></div>
+<div class="ttc" id="aproject__strats_8h_html_a156a2bbf9a6a0181b1e2e46e19d3d03b"><div class="ttname"><a href="project__strats_8h.html#a156a2bbf9a6a0181b1e2e46e19d3d03b">students_strategy</a></div><div class="ttdeci">void students_strategy(game *g, int i)</div><div class="ttdoc">La stratégie qui essaie de maximiser le nombre d&#39;étudiants mangés avant tout.</div></div>
+<div class="ttc" id="aproject__strats_8h_html_a3cca236ab99a52378eaeff271a4d81fc"><div class="ttname"><a href="project__strats_8h.html#a3cca236ab99a52378eaeff271a4d81fc">strat_funs</a></div><div class="ttdeci">void(* strat_funs[STRAT_SIZE])(game *, int)</div><div class="ttdoc">Tableau de fonctions de stratégie.</div></div>
+<div class="ttc" id="aproject__strats_8h_html_a46b595867dc7a5bf7ac28e13122e1260"><div class="ttname"><a href="project__strats_8h.html#a46b595867dc7a5bf7ac28e13122e1260">empty_strategy</a></div><div class="ttdeci">void empty_strategy(game *g, int i)</div><div class="ttdoc">Une stratégie qui ne fait rien.</div></div>
+<div class="ttc" id="aproject__strats_8h_html_a4f3fa6622bbc7abd3622da97ebb0231e"><div class="ttname"><a href="project__strats_8h.html#a4f3fa6622bbc7abd3622da97ebb0231e">time_strategy</a></div><div class="ttdeci">void time_strategy(game *g, int i)</div><div class="ttdoc">La stratégie qui essaie de maximiser le temps de survie avant tout.</div></div>
+<div class="ttc" id="aproject__strats_8h_html_a540bf8d51500c3ddb234c457e7bc076b"><div class="ttname"><a href="project__strats_8h.html#a540bf8d51500c3ddb234c457e7bc076b">strat</a></div><div class="ttdeci">strat</div><div class="ttdoc">Noms internes des stratégies disponibles.</div><div class="ttdef"><b>Definition</b> <a href="#l00051">project_strats.h:51</a></div></div>
+<div class="ttc" id="aproject__strats_8h_html_a540bf8d51500c3ddb234c457e7bc076ba37b314715ec66965e0b3de49b32a8276"><div class="ttname"><a href="project__strats_8h.html#a540bf8d51500c3ddb234c457e7bc076ba37b314715ec66965e0b3de49b32a8276">STRAT_SIZE</a></div><div class="ttdeci">@ STRAT_SIZE</div><div class="ttdoc">Nombre de stratégies.</div><div class="ttdef"><b>Definition</b> <a href="#l00058">project_strats.h:58</a></div></div>
+<div class="ttc" id="aproject__strats_8h_html_a540bf8d51500c3ddb234c457e7bc076ba64db1ee4969d1965992249eec1b2960b"><div class="ttname"><a href="project__strats_8h.html#a540bf8d51500c3ddb234c457e7bc076ba64db1ee4969d1965992249eec1b2960b">STRAT_EMPTY</a></div><div class="ttdeci">@ STRAT_EMPTY</div><div class="ttdoc">Ne fait rien.</div><div class="ttdef"><b>Definition</b> <a href="#l00052">project_strats.h:52</a></div></div>
+<div class="ttc" id="aproject__strats_8h_html_a540bf8d51500c3ddb234c457e7bc076ba89ab9c346e06ec88671c0eda3996b248"><div class="ttname"><a href="project__strats_8h.html#a540bf8d51500c3ddb234c457e7bc076ba89ab9c346e06ec88671c0eda3996b248">STRAT_CLOSESTFRUIT</a></div><div class="ttdeci">@ STRAT_CLOSESTFRUIT</div><div class="ttdoc">Essaie d&#39;atteindre le fruit le plus proche.</div><div class="ttdef"><b>Definition</b> <a href="#l00053">project_strats.h:53</a></div></div>
+<div class="ttc" id="aproject__strats_8h_html_a540bf8d51500c3ddb234c457e7bc076bad354113c8c9b9dd2930832d189e87945"><div class="ttname"><a href="project__strats_8h.html#a540bf8d51500c3ddb234c457e7bc076bad354113c8c9b9dd2930832d189e87945">STRAT_TIME</a></div><div class="ttdeci">@ STRAT_TIME</div><div class="ttdoc">Essaie de maximiser le temps de survie.</div><div class="ttdef"><b>Definition</b> <a href="#l00057">project_strats.h:57</a></div></div>
+<div class="ttc" id="aproject__strats_8h_html_a540bf8d51500c3ddb234c457e7bc076bad585fa51945f33b831526607e93d523a"><div class="ttname"><a href="project__strats_8h.html#a540bf8d51500c3ddb234c457e7bc076bad585fa51945f33b831526607e93d523a">STRAT_STUDENTS</a></div><div class="ttdeci">@ STRAT_STUDENTS</div><div class="ttdoc">Essaie de maximiser le nombre d&#39;étudiants mangés.</div><div class="ttdef"><b>Definition</b> <a href="#l00055">project_strats.h:55</a></div></div>
+<div class="ttc" id="aproject__strats_8h_html_a540bf8d51500c3ddb234c457e7bc076baec6512811ae1ea5c44cbf85240214878"><div class="ttname"><a href="project__strats_8h.html#a540bf8d51500c3ddb234c457e7bc076baec6512811ae1ea5c44cbf85240214878">STRAT_DISTANCE</a></div><div class="ttdeci">@ STRAT_DISTANCE</div><div class="ttdoc">Essaie de maximiser la distance parcourue.</div><div class="ttdef"><b>Definition</b> <a href="#l00056">project_strats.h:56</a></div></div>
+<div class="ttc" id="aproject__strats_8h_html_a540bf8d51500c3ddb234c457e7bc076baec6882970324d2640651cd8444da9ca6"><div class="ttname"><a href="project__strats_8h.html#a540bf8d51500c3ddb234c457e7bc076baec6882970324d2640651cd8444da9ca6">STRAT_SCORE</a></div><div class="ttdeci">@ STRAT_SCORE</div><div class="ttdoc">Essaie de maximiser le score.</div><div class="ttdef"><b>Definition</b> <a href="#l00054">project_strats.h:54</a></div></div>
+<div class="ttc" id="aproject__strats_8h_html_a630cdcd2d19b09c11bab5a4f6c05b80f"><div class="ttname"><a href="project__strats_8h.html#a630cdcd2d19b09c11bab5a4f6c05b80f">distance_strategy</a></div><div class="ttdeci">void distance_strategy(game *g, int i)</div><div class="ttdoc">La stratégie qui essaie de maximiser la distance parcourue avant tout.</div></div>
+<div class="ttc" id="aproject__strats_8h_html_a80c42f069efdde0bf73f151c03eeb912"><div class="ttname"><a href="project__strats_8h.html#a80c42f069efdde0bf73f151c03eeb912">strat_names</a></div><div class="ttdeci">const char * strat_names[STRAT_SIZE]</div><div class="ttdoc">Tableau de noms de stratégies.</div></div>
+<div class="ttc" id="aproject__strats_8h_html_a9028f11106263c5cff66ee3a424fbdd6"><div class="ttname"><a href="project__strats_8h.html#a9028f11106263c5cff66ee3a424fbdd6">closest_fruit_strategy</a></div><div class="ttdeci">void closest_fruit_strategy(game *g, int i)</div><div class="ttdoc">La stratégie qui essaie toujours d&#39;atteindre le fruit le plus proche.</div></div>
+<div class="ttc" id="aproject__strats_8h_html_aaa3f1bb1256ee34e131e8e20c0e0086c"><div class="ttname"><a href="project__strats_8h.html#aaa3f1bb1256ee34e131e8e20c0e0086c">score_strategy</a></div><div class="ttdeci">void score_strategy(game *g, int i)</div><div class="ttdoc">La stratégie qui essaie de maximiser le score avant tout.</div></div>
+<div class="ttc" id="aproject__tools_8h_html"><div class="ttname"><a href="project__tools_8h.html">project_tools.h</a></div><div class="ttdoc">Outils.</div></div>
+<div class="ttc" id="astructgame_html"><div class="ttname"><a href="structgame.html">game</a></div><div class="ttdoc">Type utilisé pour représenter un seul jeu.</div><div class="ttdef"><b>Definition</b> <a href="project__game_8h_source.html#l00035">project_game.h:35</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="project__strats_8h.html">project_strats.h</a></li>
+    <li class="footer">Généré par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>

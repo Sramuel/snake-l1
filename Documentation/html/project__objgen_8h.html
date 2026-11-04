@@ -1,0 +1,406 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ICSG: Référence du fichier project_objgen.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">ICSG
+   </div>
+   <div id="projectbrief">ICSG : The InitC Snake Game</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('project__objgen_8h.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#enum-members">Énumérations</a> &#124;
+<a href="#func-members">Fonctions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">Référence du fichier project_objgen.h</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Générateurs d'objets.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="project__game_8h_source.html">project_game.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="project__tools_8h_source.html">project_tools.h</a>&quot;</code><br />
+</div>
+<p><a href="project__objgen_8h_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Énumérations</h2></td></tr>
+<tr class="memitem:ad18616e742f0f017314e5ead22459ce4" id="r_ad18616e742f0f017314e5ead22459ce4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad18616e742f0f017314e5ead22459ce4">generator</a> { <br />
+&#160;&#160;<a class="el" href="#ad18616e742f0f017314e5ead22459ce4ae5df829ffa651400b328d035093ca7a1">OGEN_EMPTY</a>
+, <a class="el" href="#ad18616e742f0f017314e5ead22459ce4ac6d7c190cb59c8bb69d1a4bbdba7c7af">OGEN_BASIC</a>
+, <a class="el" href="#ad18616e742f0f017314e5ead22459ce4abac1d34e5df8eb7d14f2ccb63525107a">OGEN_SAPPLE</a>
+, <a class="el" href="#ad18616e742f0f017314e5ead22459ce4a8e0cd27e7d3309ac0b20a645be6d7765">OGEN_TENPE</a>
+, <br />
+&#160;&#160;<a class="el" href="#ad18616e742f0f017314e5ead22459ce4af40930b5fdaa730bfbe5ec8477ff3717">OGEN_STINV</a>
+, <a class="el" href="#ad18616e742f0f017314e5ead22459ce4a36d522362515da46bb66cb8037ab2b11">OGEN_SIZE</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:ad18616e742f0f017314e5ead22459ce4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Noms internes des générateurs d'objets disponibles.  <a href="#ad18616e742f0f017314e5ead22459ce4">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ad18616e742f0f017314e5ead22459ce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a4b67e54db7ef33b4accba2db29642493" id="r_a4b67e54db7ef33b4accba2db29642493"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b67e54db7ef33b4accba2db29642493">gen_empty</a> (<a class="el" href="structgame.html">game</a> *g)</td></tr>
+<tr class="memdesc:a4b67e54db7ef33b4accba2db29642493"><td class="mdescLeft">&#160;</td><td class="mdescRight">Générateur vide.  <br /></td></tr>
+<tr class="separator:a4b67e54db7ef33b4accba2db29642493"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7c1048686fa8770fe53ae5ac1adaecc" id="r_ad7c1048686fa8770fe53ae5ac1adaecc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad7c1048686fa8770fe53ae5ac1adaecc">gen_basic</a> (<a class="el" href="structgame.html">game</a> *g)</td></tr>
+<tr class="memdesc:ad7c1048686fa8770fe53ae5ac1adaecc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Générateur d'objets de base.  <br /></td></tr>
+<tr class="separator:ad7c1048686fa8770fe53ae5ac1adaecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfc6751a406c925dea583f025854ac9c" id="r_abfc6751a406c925dea583f025854ac9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abfc6751a406c925dea583f025854ac9c">gen_single_apple</a> (<a class="el" href="structgame.html">game</a> *g)</td></tr>
+<tr class="memdesc:abfc6751a406c925dea583f025854ac9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Générateur de pomme unique.  <br /></td></tr>
+<tr class="separator:abfc6751a406c925dea583f025854ac9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf6736fe8270925ff1da84113433ab80" id="r_adf6736fe8270925ff1da84113433ab80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf6736fe8270925ff1da84113433ab80">gen_ten_percent</a> (<a class="el" href="structgame.html">game</a> *g)</td></tr>
+<tr class="memdesc:adf6736fe8270925ff1da84113433ab80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Générateur de dix pour cent.  <br /></td></tr>
+<tr class="separator:adf6736fe8270925ff1da84113433ab80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54df22cb62c283763d8fa309b3f0736f" id="r_a54df22cb62c283763d8fa309b3f0736f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a54df22cb62c283763d8fa309b3f0736f">gen_student_invasion</a> (<a class="el" href="structgame.html">game</a> *g)</td></tr>
+<tr class="memdesc:a54df22cb62c283763d8fa309b3f0736f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Générateur d'invasion des étudiants.  <br /></td></tr>
+<tr class="separator:a54df22cb62c283763d8fa309b3f0736f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:aeaf869b4112763bee8cd9ab64821c2b8" id="r_aeaf869b4112763bee8cd9ab64821c2b8"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeaf869b4112763bee8cd9ab64821c2b8">generator_funs</a> [<a class="el" href="#ad18616e742f0f017314e5ead22459ce4a36d522362515da46bb66cb8037ab2b11">OGEN_SIZE</a>])(<a class="el" href="structgame.html">game</a> *)</td></tr>
+<tr class="memdesc:aeaf869b4112763bee8cd9ab64821c2b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tableau de fonctions génératrices.  <br /></td></tr>
+<tr class="separator:aeaf869b4112763bee8cd9ab64821c2b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1f1fd00ef985615e713952d659ec839" id="r_ab1f1fd00ef985615e713952d659ec839"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab1f1fd00ef985615e713952d659ec839">generator_names</a> [<a class="el" href="#ad18616e742f0f017314e5ead22459ce4a36d522362515da46bb66cb8037ab2b11">OGEN_SIZE</a>]</td></tr>
+<tr class="memdesc:ab1f1fd00ef985615e713952d659ec839"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tableau de noms de stratégies.  <br /></td></tr>
+<tr class="separator:ab1f1fd00ef985615e713952d659ec839"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Générateurs d'objets. </p>
+<p>Ce sont les fonctions utilisées pour générer de nouveaux objets sur le plateau. Une fonction génératrice d'objets prend en entrée le jeu et remplit son plateau avec un ou plusieurs objets.</p>
+<p>Pour générer un nombre aléatoire, utilisez la fonction "int rand(void)" de la bibliothèque standard. Pour obtenir un nombre aléatoire entre 0 et N, utilisez "rand() % (N+1)".</p>
+<dl class="section remark"><dt>Remarques</dt><dd>Vous devez écrire les fonctions génératrices. En revanche, vous ne devez PAS les appeler vous-même. En effet, les stratégies sont appelées dans la boucle de jeu qui est déjà écrite. Chaque tour de la boucle de jeu consiste en les quatre étapes suivantes :<ol type="1">
+<li>Utiliser une fonction de génération pour générer de nouveaux objets (la fonction est choisie lors de la création du jeu).</li>
+<li>Mettre à jour les directions de déplacement des serpents contrôlés par les joueurs en fonction des entrées du clavier.</li>
+<li>Appliquer la fonction de stratégie pour mettre à jour les directions de déplacement des serpents contrôlés par l'IA (les fonctions sont choisies lors de la création du jeu).</li>
+<li>Implémenter le tour pour tous les serpents en appelant la fonction "implement_turn_all_snakes". </li>
+</ol>
+</dd></dl>
+
+<p class="definition">Définition dans le fichier <a class="el" href="project__objgen_8h_source.html">project_objgen.h</a>.</p>
+</div><h2 class="groupheader">Documentation du type de l'énumération</h2>
+<a id="ad18616e742f0f017314e5ead22459ce4" name="ad18616e742f0f017314e5ead22459ce4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad18616e742f0f017314e5ead22459ce4">&#9670;&#160;</a></span>generator</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ad18616e742f0f017314e5ead22459ce4">generator</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Noms internes des générateurs d'objets disponibles. </p>
+<p>Pour ajouter un nouveau générateur, vous devez ajouter un nouveau nom ici, à la fin avant OGEN_SIZE. Ensuite, vous devez compléter les trois étapes suivantes :</p><ul>
+<li>Écrire la fonction génératrice correspondante.</li>
+<li>Ajouter la fonction à la fin du tableau generator_funs dans project_objgen.c (il contient toutes les fonctions génératrices).</li>
+<li>Ajouter le nom à la fin du tableau generator_names dans project_objgen.c (il contient tous les noms des générateurs). Cela est utilisé pour afficher le nom du générateur dans l'interface. </li>
+</ul>
+<table class="fieldtable">
+<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><a id="ad18616e742f0f017314e5ead22459ce4ae5df829ffa651400b328d035093ca7a1" name="ad18616e742f0f017314e5ead22459ce4ae5df829ffa651400b328d035093ca7a1"></a>OGEN_EMPTY&#160;</td><td class="fielddoc"><p>Générateur vide. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad18616e742f0f017314e5ead22459ce4ac6d7c190cb59c8bb69d1a4bbdba7c7af" name="ad18616e742f0f017314e5ead22459ce4ac6d7c190cb59c8bb69d1a4bbdba7c7af"></a>OGEN_BASIC&#160;</td><td class="fielddoc"><p>Générateur aléatoire de base. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad18616e742f0f017314e5ead22459ce4abac1d34e5df8eb7d14f2ccb63525107a" name="ad18616e742f0f017314e5ead22459ce4abac1d34e5df8eb7d14f2ccb63525107a"></a>OGEN_SAPPLE&#160;</td><td class="fielddoc"><p>Générateur assurant qu'une seule pomme est toujours présente sur le plateau. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad18616e742f0f017314e5ead22459ce4a8e0cd27e7d3309ac0b20a645be6d7765" name="ad18616e742f0f017314e5ead22459ce4a8e0cd27e7d3309ac0b20a645be6d7765"></a>OGEN_TENPE&#160;</td><td class="fielddoc"><p>Générateur assurant que dix pour cent des cellules vides sont toujours remplies d'objets aléatoires. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad18616e742f0f017314e5ead22459ce4af40930b5fdaa730bfbe5ec8477ff3717" name="ad18616e742f0f017314e5ead22459ce4af40930b5fdaa730bfbe5ec8477ff3717"></a>OGEN_STINV&#160;</td><td class="fielddoc"><p>Générateur qui remplit le plateau uniquement avec des étudiants. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad18616e742f0f017314e5ead22459ce4a36d522362515da46bb66cb8037ab2b11" name="ad18616e742f0f017314e5ead22459ce4a36d522362515da46bb66cb8037ab2b11"></a>OGEN_SIZE&#160;</td><td class="fielddoc"><p>Nombre de générateurs. </p>
+</td></tr>
+</table>
+
+<p class="definition">Définition à la ligne <a class="el" href="project__objgen_8h_source.html#l00051">51</a> du fichier <a class="el" href="project__objgen_8h_source.html">project_objgen.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a id="a4b67e54db7ef33b4accba2db29642493" name="a4b67e54db7ef33b4accba2db29642493"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b67e54db7ef33b4accba2db29642493">&#9670;&#160;</a></span>gen_empty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gen_empty </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structgame.html">game</a> *</td>          <td class="paramname"><span class="paramname"><em>g</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Générateur vide. </p>
+<p>Ne fait rien (aucun objet n'est généré). </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>Le plateau. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad7c1048686fa8770fe53ae5ac1adaecc" name="ad7c1048686fa8770fe53ae5ac1adaecc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7c1048686fa8770fe53ae5ac1adaecc">&#9670;&#160;</a></span>gen_basic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gen_basic </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structgame.html">game</a> *</td>          <td class="paramname"><span class="paramname"><em>g</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Générateur d'objets de base. </p>
+<p>Tous les LENGTH_CELL tours, ce générateur choisit une cellule vide aléatoire et la remplit avec un objet aléatoire. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>Le plateau. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abfc6751a406c925dea583f025854ac9c" name="abfc6751a406c925dea583f025854ac9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfc6751a406c925dea583f025854ac9c">&#9670;&#160;</a></span>gen_single_apple()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gen_single_apple </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structgame.html">game</a> *</td>          <td class="paramname"><span class="paramname"><em>g</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Générateur de pomme unique. </p>
+<p>Assure qu'une seule pomme est toujours présente sur le plateau. Si la pomme est mangée, une nouvelle est générée. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>Le plateau. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adf6736fe8270925ff1da84113433ab80" name="adf6736fe8270925ff1da84113433ab80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf6736fe8270925ff1da84113433ab80">&#9670;&#160;</a></span>gen_ten_percent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gen_ten_percent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structgame.html">game</a> *</td>          <td class="paramname"><span class="paramname"><em>g</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Générateur de dix pour cent. </p>
+<p>Assure que dix pour cent des cellules vides sont toujours remplies d'objets aléatoires. Si le pourcentage de cellules remplies tombe en dessous de dix pour cent, le générateur remplit des cellules vides choisies aléatoirement avec des objets aléatoires jusqu'à ce que le pourcentage soit de dix pour cent. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>Le plateau. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a54df22cb62c283763d8fa309b3f0736f" name="a54df22cb62c283763d8fa309b3f0736f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54df22cb62c283763d8fa309b3f0736f">&#9670;&#160;</a></span>gen_student_invasion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gen_student_invasion </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structgame.html">game</a> *</td>          <td class="paramname"><span class="paramname"><em>g</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Générateur d'invasion des étudiants. </p>
+<p>Assure que vingt pour cent des cellules vides sont toujours remplies d'étudiants. Si le pourcentage de cellules remplies tombe en dessous de vingt pour cent, le générateur remplit des cellules vides choisies aléatoirement avec des étudiants jusqu'à ce que le pourcentage soit de vingt pour cent.</p>
+<dl class="section attention"><dt>Attention</dt><dd>Lorsqu'ils sont mangés, les étudiants peuvent augmenter considérablement la longueur des serpents. Avant d'utiliser ce générateur, assurez-vous que la fonction utilisée pour consommer la nourriture gère l'erreur qui peut survenir lorsque la longueur totale du serpent devient "trop élevée". </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>Le plateau. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des variables</h2>
+<a id="aeaf869b4112763bee8cd9ab64821c2b8" name="aeaf869b4112763bee8cd9ab64821c2b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeaf869b4112763bee8cd9ab64821c2b8">&#9670;&#160;</a></span>generator_funs</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* generator_funs[<a class="el" href="#ad18616e742f0f017314e5ead22459ce4a36d522362515da46bb66cb8037ab2b11">OGEN_SIZE</a>])(<a class="el" href="structgame.html">game</a> *) </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structgame.html">game</a> *</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tableau de fonctions génératrices. </p>
+
+</div>
+</div>
+<a id="ab1f1fd00ef985615e713952d659ec839" name="ab1f1fd00ef985615e713952d659ec839"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1f1fd00ef985615e713952d659ec839">&#9670;&#160;</a></span>generator_names</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* generator_names[<a class="el" href="#ad18616e742f0f017314e5ead22459ce4a36d522362515da46bb66cb8037ab2b11">OGEN_SIZE</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tableau de noms de stratégies. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="project__objgen_8h.html">project_objgen.h</a></li>
+    <li class="footer">Généré par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>

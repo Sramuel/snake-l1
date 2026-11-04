@@ -1,0 +1,406 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ICSG: Référence du fichier project_score.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">ICSG
+   </div>
+   <div id="projectbrief">ICSG : The InitC Snake Game</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('project__score_8h.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Structures de données</a> &#124;
+<a href="#enum-members">Énumérations</a> &#124;
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle"><div class="title">Référence du fichier project_score.h</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Scores.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="project__snake_8h_source.html">project_snake.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="project__tools_8h_source.html">project_tools.h</a>&quot;</code><br />
+</div>
+<p><a href="project__score_8h_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Structures de données</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsingle__score.html">single_score</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type utilisé pour représenter les valeurs de score d'un seul serpent après un seul jeu.  <a href="structsingle__score.html#details">Plus de détails...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore__table.html">score_table</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type utilisé pour représenter les scores de chaque jeu dans une série de jeux.  <a href="structscore__table.html#details">Plus de détails...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Énumérations</h2></td></tr>
+<tr class="memitem:aed36276ae7ac961357268efdfdbc85f9" id="r_aed36276ae7ac961357268efdfdbc85f9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed36276ae7ac961357268efdfdbc85f9">score_type</a> { <br />
+&#160;&#160;<a class="el" href="#aed36276ae7ac961357268efdfdbc85f9a78d1ad6636ccee75744c1081b30ac1bf">SC_MAIN</a>
+, <a class="el" href="#aed36276ae7ac961357268efdfdbc85f9a911424e81e3ca4e8f34db2de257dbcca">SC_STUDENTS</a>
+, <a class="el" href="#aed36276ae7ac961357268efdfdbc85f9a8932aac4add65e3ab9a7649c94d4c10f">SC_LENGTH</a>
+, <a class="el" href="#aed36276ae7ac961357268efdfdbc85f9afb93f6e02d51082586b12570f55e7088">SC_VISITED</a>
+, <br />
+&#160;&#160;<a class="el" href="#aed36276ae7ac961357268efdfdbc85f9ae812bf288076fa01c7ec794b7a92deb4">SC_TIME</a>
+, <a class="el" href="#aed36276ae7ac961357268efdfdbc85f9ab9a57cb93122b495fecd8102ac5bd00a">SC_SIZE</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:aed36276ae7ac961357268efdfdbc85f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type utilisé pour représenter les différents scores.  <a href="#aed36276ae7ac961357268efdfdbc85f9">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aed36276ae7ac961357268efdfdbc85f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a7d6ee408144bed6a281bfcf448fee001" id="r_a7d6ee408144bed6a281bfcf448fee001"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structscore__table.html">score_table</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d6ee408144bed6a281bfcf448fee001">new_score_table</a> (int n_g, int n_s)</td></tr>
+<tr class="memdesc:a7d6ee408144bed6a281bfcf448fee001"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alloue un nouveau <a class="el" href="structscore__table.html" title="Type utilisé pour représenter les scores de chaque jeu dans une série de jeux.">score_table</a> sur le tas.  <br /></td></tr>
+<tr class="separator:a7d6ee408144bed6a281bfcf448fee001"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08f9e6c2d03e040fb3daf6c5d9843674" id="r_a08f9e6c2d03e040fb3daf6c5d9843674"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08f9e6c2d03e040fb3daf6c5d9843674">delete_score_table</a> (<a class="el" href="structscore__table.html">score_table</a> *st)</td></tr>
+<tr class="memdesc:a08f9e6c2d03e040fb3daf6c5d9843674"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supprime un <a class="el" href="structscore__table.html" title="Type utilisé pour représenter les scores de chaque jeu dans une série de jeux.">score_table</a>.  <br /></td></tr>
+<tr class="separator:a08f9e6c2d03e040fb3daf6c5d9843674"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab74b56bd66d050f02aeae2e424a2983e" id="r_ab74b56bd66d050f02aeae2e424a2983e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab74b56bd66d050f02aeae2e424a2983e">move_to_next_game</a> (<a class="el" href="structscore__table.html">score_table</a> *st)</td></tr>
+<tr class="memdesc:ab74b56bd66d050f02aeae2e424a2983e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Passe au jeu suivant dans la série.  <br /></td></tr>
+<tr class="separator:ab74b56bd66d050f02aeae2e424a2983e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a220cc4794b608698046ebdf77bb37bcf" id="r_a220cc4794b608698046ebdf77bb37bcf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a220cc4794b608698046ebdf77bb37bcf">update_single_score</a> (<a class="el" href="structscore__table.html">score_table</a> *st, int i, <a class="el" href="structsnake.html">snake</a> *s, int t)</td></tr>
+<tr class="memdesc:a220cc4794b608698046ebdf77bb37bcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Met à jour le score d'un seul serpent dans le jeu.  <br /></td></tr>
+<tr class="separator:a220cc4794b608698046ebdf77bb37bcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a628205df716bdc523999cab7f491ad93" id="r_a628205df716bdc523999cab7f491ad93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a628205df716bdc523999cab7f491ad93">compute_final_scores</a> (<a class="el" href="structscore__table.html">score_table</a> *st)</td></tr>
+<tr class="memdesc:a628205df716bdc523999cab7f491ad93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcule les scores finaux du jeu après que tous les jeux ont été joués.  <br /></td></tr>
+<tr class="separator:a628205df716bdc523999cab7f491ad93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1afe1003a6a3fe4ce08610459a441eff" id="r_a1afe1003a6a3fe4ce08610459a441eff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1afe1003a6a3fe4ce08610459a441eff">sort_scores</a> (<a class="el" href="structscore__table.html">score_table</a> *st, int n_g, <a class="el" href="#aed36276ae7ac961357268efdfdbc85f9">score_type</a> type)</td></tr>
+<tr class="memdesc:a1afe1003a6a3fe4ce08610459a441eff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trie les serpents dans un <a class="el" href="structscore__table.html" title="Type utilisé pour représenter les scores de chaque jeu dans une série de jeux.">score_table</a> selon un type de score particulier pour un jeu particulier de la série (ou le score final).  <br /></td></tr>
+<tr class="separator:a1afe1003a6a3fe4ce08610459a441eff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Scores. </p>
+<p>Type utilisé pour représenter les scores d'un jeu. </p>
+
+<p class="definition">Définition dans le fichier <a class="el" href="project__score_8h_source.html">project_score.h</a>.</p>
+</div><h2 class="groupheader">Documentation du type de l'énumération</h2>
+<a id="aed36276ae7ac961357268efdfdbc85f9" name="aed36276ae7ac961357268efdfdbc85f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed36276ae7ac961357268efdfdbc85f9">&#9670;&#160;</a></span>score_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#aed36276ae7ac961357268efdfdbc85f9">score_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Type utilisé pour représenter les différents scores. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><a id="aed36276ae7ac961357268efdfdbc85f9a78d1ad6636ccee75744c1081b30ac1bf" name="aed36276ae7ac961357268efdfdbc85f9a78d1ad6636ccee75744c1081b30ac1bf"></a>SC_MAIN&#160;</td><td class="fielddoc"><p>Le score principal du serpent. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aed36276ae7ac961357268efdfdbc85f9a911424e81e3ca4e8f34db2de257dbcca" name="aed36276ae7ac961357268efdfdbc85f9a911424e81e3ca4e8f34db2de257dbcca"></a>SC_STUDENTS&#160;</td><td class="fielddoc"><p>Le nombre d'étudiants que le serpent a mangés. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aed36276ae7ac961357268efdfdbc85f9a8932aac4add65e3ab9a7649c94d4c10f" name="aed36276ae7ac961357268efdfdbc85f9a8932aac4add65e3ab9a7649c94d4c10f"></a>SC_LENGTH&#160;</td><td class="fielddoc"><p>La longueur du serpent lorsqu'il est mort. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aed36276ae7ac961357268efdfdbc85f9afb93f6e02d51082586b12570f55e7088" name="aed36276ae7ac961357268efdfdbc85f9afb93f6e02d51082586b12570f55e7088"></a>SC_VISITED&#160;</td><td class="fielddoc"><p>Le nombre de cellules que le serpent a visitées avant de mourir. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aed36276ae7ac961357268efdfdbc85f9ae812bf288076fa01c7ec794b7a92deb4" name="aed36276ae7ac961357268efdfdbc85f9ae812bf288076fa01c7ec794b7a92deb4"></a>SC_TIME&#160;</td><td class="fielddoc"><p>Le temps que le serpent a passé en vie (donné en secondes). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aed36276ae7ac961357268efdfdbc85f9ab9a57cb93122b495fecd8102ac5bd00a" name="aed36276ae7ac961357268efdfdbc85f9ab9a57cb93122b495fecd8102ac5bd00a"></a>SC_SIZE&#160;</td><td class="fielddoc"><p>Le nombre de types de scores. </p>
+</td></tr>
+</table>
+
+<p class="definition">Définition à la ligne <a class="el" href="project__score_8h_source.html#l00031">31</a> du fichier <a class="el" href="project__score_8h_source.html">project_score.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a id="a7d6ee408144bed6a281bfcf448fee001" name="a7d6ee408144bed6a281bfcf448fee001"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d6ee408144bed6a281bfcf448fee001">&#9670;&#160;</a></span>new_score_table()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structscore__table.html">score_table</a> * new_score_table </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>n_g</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>n_s</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Alloue un nouveau <a class="el" href="structscore__table.html" title="Type utilisé pour représenter les scores de chaque jeu dans une série de jeux.">score_table</a> sur le tas. </p>
+<dl class="section remark"><dt>Remarques</dt><dd>Les scores des serpents ne sont pas initialisés (la valeur booléenne filled est définie sur false pour chaque score). Les scores seront remplis après chaque jeu joué.</dd></dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Un pointeur vers le nouveau <a class="el" href="structscore__table.html" title="Type utilisé pour représenter les scores de chaque jeu dans une série de jeux.">score_table</a>. </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n_g</td><td>Le nombre de jeux.  </td></tr>
+    <tr><td class="paramname">n_s</td><td>Le nombre total de serpents. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a08f9e6c2d03e040fb3daf6c5d9843674" name="a08f9e6c2d03e040fb3daf6c5d9843674"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08f9e6c2d03e040fb3daf6c5d9843674">&#9670;&#160;</a></span>delete_score_table()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void delete_score_table </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structscore__table.html">score_table</a> *</td>          <td class="paramname"><span class="paramname"><em>st</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Supprime un <a class="el" href="structscore__table.html" title="Type utilisé pour représenter les scores de chaque jeu dans une série de jeux.">score_table</a>. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">st</td><td>Le <a class="el" href="structscore__table.html" title="Type utilisé pour représenter les scores de chaque jeu dans une série de jeux.">score_table</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab74b56bd66d050f02aeae2e424a2983e" name="ab74b56bd66d050f02aeae2e424a2983e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab74b56bd66d050f02aeae2e424a2983e">&#9670;&#160;</a></span>move_to_next_game()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void move_to_next_game </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structscore__table.html">score_table</a> *</td>          <td class="paramname"><span class="paramname"><em>st</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Passe au jeu suivant dans la série. </p>
+<p>Incrémente le champ cu_game du <a class="el" href="structscore__table.html" title="Type utilisé pour représenter les scores de chaque jeu dans une série de jeux.">score_table</a>.</p>
+<dl class="section remark"><dt>Remarques</dt><dd>Cette fonction est appelée automatiquement par l'interface. </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">st</td><td>Le <a class="el" href="structscore__table.html" title="Type utilisé pour représenter les scores de chaque jeu dans une série de jeux.">score_table</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a220cc4794b608698046ebdf77bb37bcf" name="a220cc4794b608698046ebdf77bb37bcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a220cc4794b608698046ebdf77bb37bcf">&#9670;&#160;</a></span>update_single_score()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void update_single_score </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structscore__table.html">score_table</a> *</td>          <td class="paramname"><span class="paramname"><em>st</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>i</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structsnake.html">snake</a> *</td>          <td class="paramname"><span class="paramname"><em>s</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>t</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Met à jour le score d'un seul serpent dans le jeu. </p>
+<p>Le score du serpent est mis à jour après que le serpent meurt dans le jeu.</p>
+<dl class="section remark"><dt>Remarques</dt><dd>Vous devez appeler cette fonction dans implement_turn_all_snakes défini dans <a class="el" href="project__game_8h.html" title="Jeu.">project_game.h</a> après qu'un serpent meurt. </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">st</td><td>Le <a class="el" href="structscore__table.html" title="Type utilisé pour représenter les scores de chaque jeu dans une série de jeux.">score_table</a>.  </td></tr>
+    <tr><td class="paramname">i</td><td>L'index du serpent dans le jeu (dans le plateau).  </td></tr>
+    <tr><td class="paramname">s</td><td>Le serpent qui est mort.  </td></tr>
+    <tr><td class="paramname">t</td><td>Le temps que le serpent est resté en vie avant de mourir (donné en secondes). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a628205df716bdc523999cab7f491ad93" name="a628205df716bdc523999cab7f491ad93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a628205df716bdc523999cab7f491ad93">&#9670;&#160;</a></span>compute_final_scores()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void compute_final_scores </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structscore__table.html">score_table</a> *</td>          <td class="paramname"><span class="paramname"><em>st</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calcule les scores finaux du jeu après que tous les jeux ont été joués. </p>
+<dl class="section remark"><dt>Remarques</dt><dd>Cette fonction est appelée automatiquement par l'interface. </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">st</td><td>Le <a class="el" href="structscore__table.html" title="Type utilisé pour représenter les scores de chaque jeu dans une série de jeux.">score_table</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1afe1003a6a3fe4ce08610459a441eff" name="a1afe1003a6a3fe4ce08610459a441eff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1afe1003a6a3fe4ce08610459a441eff">&#9670;&#160;</a></span>sort_scores()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sort_scores </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structscore__table.html">score_table</a> *</td>          <td class="paramname"><span class="paramname"><em>st</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>n_g</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#aed36276ae7ac961357268efdfdbc85f9">score_type</a></td>          <td class="paramname"><span class="paramname"><em>type</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Trie les serpents dans un <a class="el" href="structscore__table.html" title="Type utilisé pour représenter les scores de chaque jeu dans une série de jeux.">score_table</a> selon un type de score particulier pour un jeu particulier de la série (ou le score final). </p>
+<p>Le tableau des scores dans le <a class="el" href="structscore__table.html" title="Type utilisé pour représenter les scores de chaque jeu dans une série de jeux.">score_table</a> doit être trié par ordre décroissant du type de score donné en paramètre.</p>
+<dl class="section remark"><dt>Remarques</dt><dd>Cette fonction est appelée automatiquement par l'interface. </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">st</td><td>Le <a class="el" href="structscore__table.html" title="Type utilisé pour représenter les scores de chaque jeu dans une série de jeux.">score_table</a>.  </td></tr>
+    <tr><td class="paramname">n_g</td><td>Le jeu selon lequel le tri doit être effectué (ou nb_games pour le score final).  </td></tr>
+    <tr><td class="paramname">type</td><td>Le type de score selon lequel le tri doit être effectué. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="project__score_8h.html">project_score.h</a></li>
+    <li class="footer">Généré par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>
