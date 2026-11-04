@@ -29,3 +29,8 @@ Pour nettoyer les fichiers générés :
 ```bash
 make clean
 ```
+
+"'## Avertissement
+
+Ce dépôt contient un projet étudiant réalisé à des fins pédagogiques et académiques. Il peut contenir des limitations, des choix simplifiés ou des failles de sécurité ; il n est pas destiné à un usage professionnel, à la production ou au traitement de données réelles. Utilisez-le uniquement dans un environnement de test et adaptez-le avant toute réutilisation.
+'"
